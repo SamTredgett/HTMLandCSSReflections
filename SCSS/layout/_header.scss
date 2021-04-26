@@ -70,7 +70,7 @@
                 }
             }            
             & > .contact-xl{
-                background-color: #999aa2;
+                background-color: $search-border-grey;
                 &:hover{
                     background-color: #84858f;
                 }
@@ -147,20 +147,17 @@
             & > input{
                 width:200px;
                 height: 56px;
-                border: 1px solid #999aa2;
+                border: 1px solid $search-border-grey;
                 padding-left: 15px;
                 padding-right: 30px;
-
-                &:focus{
-                    
+                &:focus{ //On focusing the element we want to emanate a small blue shadow and change border colour
                     border-color: #5bc0de;
-                    //box-shadow: 0 0 8px rgb(91 192 222 / 60%);
-                    
+                    box-shadow: 0 0 8px rgba(#5BC0DE , 60%);
                 }
             }
             & > button{
                 position: absolute;
-                background-color: #999aa2;
+                background-color: $search-border-grey;
                 border: inherit;
                 height: 56px;
                 width: 63px;
@@ -171,8 +168,7 @@
                 right: -40px;
                 padding: 7px 20px 3px;
                 & > i {
-                    font-size: 20px;
-                    
+                    font-size: 20px;   
                 }
                 &:hover{
                     background-color: #84858f;
@@ -243,7 +239,7 @@
         & > form{         
             & > input{
                 display:block;
-                border: 1px solid #999aa2;           
+                border: 1px solid $search-border-grey;           
             }
             & > button{
                 border-top-left-radius: 0px;

@@ -185,6 +185,8 @@
   }
   .searchbar-lg > form > input:focus {
     border-color: #5bc0de;
+    -webkit-box-shadow: 0 0 8px #5bc0de;
+            box-shadow: 0 0 8px #5bc0de;
   }
   .searchbar-lg > form > button {
     position: absolute;
