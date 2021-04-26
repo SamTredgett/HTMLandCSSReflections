@@ -1,0 +1,254 @@
+.nav-cards{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+    & > button:hover{
+        cursor:pointer;
+    }
+
+    & > .xl-row-nav , .xxl-row-nav .lg-row-nav {
+        & > .card-nav{
+            justify-content: center;
+            padding: 30px 30px;
+            display: flex;
+            flex-direction: column;
+            height: 300px;
+            position: relative;
+            // box-shadow: 0 3px 35px rgb(0 0 0 / 10%);
+            box-shadow: inset 0 0px 0px rgba($shadow-light-grey, 90%);
+            text-align: center;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            margin: 1rem 1rem;
+            
+            & >p{
+                font-size: .8125rem;
+            }
+            & > h2{
+                position: relative;
+                font-size: 1.125rem;
+                padding-bottom: 17px;
+                margin: 0 0 11px;
+                font-weight: 200;
+                color: #333645;
+                text-align: center;
+                line-height: 1.1;
+                display: block;
+            }
+            & > h2::after{
+                position: absolute;
+                content: "";
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: auto;
+                width: 28px;
+                height: 3px;
+                display: block;
+                background-color: $darkest-blue;
+            }
+            &:hover{
+                
+                & > p, h2{
+                    color: $white-text;
+                }
+
+                & > h2::after{
+                    background-color: $white-text;
+                }
+            }
+            
+            & > .nav-icon-con{
+                border-radius: 50%;
+                min-width: 50px;
+                min-height: 50px;
+                max-width: 51px;
+                max-height: 51px;
+                margin:0 auto 17px;
+                position:relative;
+                //text-align: center;
+                //vertical-align: middle;
+                font-weight: 600;
+                //line-height: 1.42857143;
+                & > span{
+                    & > span{
+                        & > i{
+                            position: absolute;
+                            top: 14px;
+                            left: 16px;
+                            
+                        }
+                    }
+                    
+                }
+            
+            }
+            
+    
+            & > span{
+                //padding: 0px 30px;
+                text-align: center;
+            }
+    
+            & > .btn-nav{
+                min-height: 45px;
+                max-height: 45px;
+                width: 150px;
+                line-height: 35px;
+                font-size: 1.063rem;
+                white-space: normal;
+                border:none;
+                color: $white-text;
+                border-radius: 3px;
+                padding: 5px 15px;
+                display: block;
+                margin-bottom: 0;
+                font-weight: 400;
+                text-align: center;
+                cursor: pointer;
+                margin:0 auto;
+            }
+            
+        }
+    }
+}
+
+
+// colour settings for the card interactions via hover etc. to invert colours 
+.bespoke, #btn-bespoke{
+    background-color: $bespoke-color;
+    
+}
+.IT, #btn-IT{
+    background-color: $it-support-color;
+}
+
+.marketing, #btn-marketing{
+    background-color: $marketing-color;
+   
+}
+.telecoms, #btn-telecoms{
+    background-color: $telecoms-color;
+    
+}
+.security, #btn-security{
+    background-color: $security-color-hovered;
+}
+.web-design, #btn-web{
+    background-color: $web-color-hovered;
+}
+.schools, #btn-school{
+    background-color: $web-color-hovered;
+}
+
+.card-bespoke:hover{
+    .nav-icon-con, #btn-bespoke{
+        background-color: $white-text;
+        color: $bespoke-color;
+    }
+    .spacer-rule{
+        background-color: $white-text;
+    }
+
+    i{
+        color: $bespoke-color;
+    }
+    background-color: $bespoke-color;
+    color: $white-text;
+    cursor: pointer;
+}
+
+.card-IT:hover{
+    .nav-icon-con, #btn-IT{
+        background-color: $white-text;
+        color: $it-support-color;
+    }
+    .spacer-rule{
+        background-color: $white-text;
+    }
+
+    i{
+        color: $it-support-color;
+    }
+    background-color: $it-support-color;
+    color: $white-text;
+    cursor: pointer;
+}
+
+.card-marketing:hover{
+    .nav-icon-con, #btn-marketing{
+        background-color: $white-text;
+        color: $marketing-color;
+    }
+    .spacer-rule{
+        background-color: $white-text;
+    }
+
+    i{
+        color: $marketing-color;
+    }
+    background-color: $marketing-color;
+    color: $white-text;
+    cursor: pointer;
+}
+
+.card-telecoms:hover{
+    .nav-icon-con, #btn-telecoms{
+        background-color: $white-text;
+        color: $telecoms-color;
+    }
+    .spacer-rule{
+        background-color: $white-text;
+    }
+    i{
+        color: $telecoms-color;
+    }
+    background-color: $telecoms-color;
+    color: $white-text;
+    cursor: pointer;
+}
+
+.card-web:hover{
+    .nav-icon-con, #btn-web{
+        background-color: $white-text;
+        color: $web-color-hovered;
+    }
+    .spacer-rule{
+        background-color: $white-text;
+    }
+
+    i{
+        color: $web-color-hovered;
+    }
+    background-color: $web-color-hovered;
+    color: $white-text;
+    cursor: pointer;
+}
+
+.card-security:hover{
+    .nav-icon-con, #btn-security{
+        background-color: $white-text;
+        color: $security-color-hovered;
+    }
+
+    i{
+        color: $security-color-hovered;
+    }
+    background-color: $security-color-hovered;
+    color: $white-text;
+    cursor: pointer;
+}
+
+.card-schools:hover{
+    .nav-icon-con, #btn-school{
+        background-color: $white-text;
+        color: $web-color-hovered;
+    }
+
+    i{
+        color: $web-color-hovered;
+    }
+    background-color: $web-color-hovered;
+    color: $white-text;
+    cursor: pointer;
+}

@@ -191,122 +191,122 @@
     }
         
 }
-//show desktop/tablet search bar
-@media only screen and (min-width:768px){
-    .searchbar-lg{
-        position:absolute;
-        top:15px;
-        right: 140px;
+// //show desktop/tablet search bar
+// @media only screen and (min-width:768px){
+//     .searchbar-lg{
+//         position:absolute;
+//         top:15px;
+//         right: 140px;
 
-        & > form{
-            position:relative;
-            & > input{
-                width:200px;
-                height: 56px;
-                border: 1px solid $search-border-grey;
-                padding-left: 15px;
-                padding-right: 30px;
-                &:focus{ //On focusing the element we want to emanate a small blue shadow and change border colour
-                    border-color: #5BC0DE;
-                    box-shadow: 0 0 8px rgba(#5BC0DE , 60%);
-                }
-            }
-            & > button{
-                position: absolute;
-                background-color: $search-border-grey;
-                border: inherit;
-                height: 56px;
-                width: 63px;
-                border-radius: 3px;
-                border-top-left-radius: 0px;
-                border-bottom-left-radius: 0px;
-                top:0px;
-                right: -40px;
-                padding: 7px 20px 3px;
-                & > i {
-                    font-size: 20px;   
-                }
-                &:hover{
-                    background-color: #84858f;
-                }
+//         & > form{
+//             position:relative;
+//             & > input{
+//                 width:200px;
+//                 height: 56px;
+//                 border: 1px solid $search-border-grey;
+//                 padding-left: 15px;
+//                 padding-right: 30px;
+//                 &:focus{ //On focusing the element we want to emanate a small blue shadow and change border colour
+//                     border-color: #5BC0DE;
+//                     box-shadow: 0 0 8px rgba(#5BC0DE , 60%);
+//                 }
+//             }
+//             & > button{
+//                 position: absolute;
+//                 background-color: $search-border-grey;
+//                 border: inherit;
+//                 height: 56px;
+//                 width: 63px;
+//                 border-radius: 3px;
+//                 border-top-left-radius: 0px;
+//                 border-bottom-left-radius: 0px;
+//                 top:0px;
+//                 right: -40px;
+//                 padding: 7px 20px 3px;
+//                 & > i {
+//                     font-size: 20px;   
+//                 }
+//                 &:hover{
+//                     background-color: #84858f;
+//                 }
                 
-            }
-        }       
-    }
-}
-//hide support and contact buttons
-@media only screen and (max-width:992px){
-    .big-beautiful-button{
-        display: none;
-    }
-}
+//             }
+//         }       
+//     }
+// }
+// //hide support and contact buttons
+// @media only screen and (max-width:992px){
+//     .big-beautiful-button{
+//         display: none;
+//     }
+// }
 
-//show contact buttons
-@media only screen and (min-width:992px){
-    //hide tablet/desktop searchbar
-    .searchbar-lg{
-        & > form{
-            border:none;
-            & > input{
-                display:none;
+// //show contact buttons
+// @media only screen and (min-width:992px){
+//     //hide tablet/desktop searchbar
+//     .searchbar-lg{
+//         & > form{
+//             border:none;
+//             & > input{
+//                 display:none;
                 
-            }
-            & > button{
-                border-radius: 3px;
-                right: -20px;
-                top:0px;
-            }
-        }      
-    }
-    .support-xl{
-        display:flex;
-        justify-content: space-around;
-        flex-direction: row;
-        border:none;
-        border-radius:3px;
-        color:$white-text;
-        position: absolute;
-        top:15px;
-        right: 350px;        
-    }
-    .contact-xl{
-        display:flex;
-        justify-content: space-around;
-        flex-direction: row;
-        border:none;
-        border-radius:3px;
-        color:$white-text;
-        position: absolute;
-        top:15px;
-        right: 200px;        
-    }
-    .header-top{
-        width:1010px;
-        margin: 0 auto;
-    }
-}
+//             }
+//             & > button{
+//                 border-radius: 3px;
+//                 right: -20px;
+//                 top:0px;
+//             }
+//         }      
+//     }
+//     .support-xl{
+//         display:flex;
+//         justify-content: space-around;
+//         flex-direction: row;
+//         border:none;
+//         border-radius:3px;
+//         color:$white-text;
+//         position: absolute;
+//         top:15px;
+//         right: 350px;        
+//     }
+//     .contact-xl{
+//         display:flex;
+//         justify-content: space-around;
+//         flex-direction: row;
+//         border:none;
+//         border-radius:3px;
+//         color:$white-text;
+//         position: absolute;
+//         top:15px;
+//         right: 200px;        
+//     }
+//     .header-top{
+//         width:1010px;
+//         margin: 0 auto;
+//     }
+// }
 
-@media only screen and (min-width:1280px){    
-    .header-top{
-        width:1298px;
-        margin: 0 auto;
-    }  
-    .searchbar-lg{
-        & > form{         
-            & > input{
-                display:block;
-                border: 1px solid $search-border-grey;           
-            }
-            & > button{
-                border-top-left-radius: 0px;
-                border-bottom-left-radius: 0px;
-                right:-40px;
-            }
-        }       
-    }
-    .support-xl{ right: 530px; }
-    .contact-xl{ right: 380px; }
-}
+// @media only screen and (min-width:1280px){    
+//     .header-top{
+//         width:1298px;
+//         margin: 0 auto;
+//     }  
+//     .searchbar-lg{
+//         & > form{         
+//             & > input{
+//                 display:block;
+//                 border: 1px solid $search-border-grey;           
+//             }
+//             & > button{
+//                 border-top-left-radius: 0px;
+//                 border-bottom-left-radius: 0px;
+//                 right:-40px;
+//             }
+//         }       
+//     }
+//     .support-xl{ right: 530px; }
+//     .contact-xl{ right: 380px; }
+// }
     
 
 
