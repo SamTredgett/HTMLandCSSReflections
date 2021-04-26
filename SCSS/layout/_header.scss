@@ -1,0 +1,257 @@
+.logo{
+    display:block;
+    max-width: 100%;
+    margin-top: 15px;
+}
+.header{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 0 15px;
+
+    & > .header-top{
+        display: flex;
+        height:56px;
+        vertical-align: middle;
+        flex-direction: row;
+        margin: 30px auto;
+        position: relative;
+        .buttons{
+            display:flex;
+            justify-content: space-around;
+            margin-left: auto;
+            & > .support, .hamburger{
+                position:absolute;
+            }
+            & > .support{
+                display: block;
+                top: 45px;
+                right: 50px;
+                & > i{
+                    height: 56px;
+                    width: 56px;
+                    transform: scale(1.75);          
+                }
+                &::after{
+                    content: "";
+                    position: absolute;
+                    top: 15px;
+                    left: -25px;
+                    width: 30px;
+                    height: 3px;
+                    background-color: #000;
+                    display: none;
+                }
+                &:hover{
+                    &::after{
+                        display:block;
+                    }
+                }
+            }
+            & > .big-beautiful-button{
+                padding: 15px 30px;
+                height: 56px;
+                width: 130px;
+                & > i{
+                    padding: 5px 15px;
+                    padding-right: 5px;
+                    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+                        padding-right: 0;
+                    }
+                    font-size: 18px;
+                }
+                @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+                    padding: 15px 10px 15px 0;
+                }   
+            }       
+            & > .support-xl{
+                background-color: #4183d7;
+                &:hover{
+                    background-color: #2a6ec6;
+                }
+            }            
+            & > .contact-xl{
+                background-color: #999aa2;
+                &:hover{
+                    background-color: #84858f;
+                }
+            }
+            & > .hamburger{
+                background-color: #333645;
+                color: #fff;
+                margin-bottom: 10px;
+                border-radius: 3px;
+                font-size: 0.1rem;
+                height: 56px;
+                display: block;
+                top: 15px;
+                right: 0px;
+                padding: 10px 12px;
+
+                & > .menutext{
+                    font-size: 0.75rem;
+                    line-height: 1.6rem;
+                    margin-top: 5px;
+                }
+    
+                &:hover{
+                    background-color: #22242e;
+                }
+            }
+        }
+}
+}
+
+
+@media only screen and (max-width:768px){
+    .searchbar-lg{
+        display: none;
+    }
+    .searchbar-mobile{
+        @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+            & > button{
+                margin-right: 20px;
+            }
+        }
+        margin: 0 auto;
+    }
+    .header{ margin-bottom: 30px;  }
+    .logo{ max-width: 80%; }   
+}
+//hide call button and mobile search
+@media only screen and (min-width:768px){
+    .support{
+        & > i{
+            display: none;
+        }
+    }
+    .header{
+        & > .searchbar-mobile{
+            display: none;
+            & > i{
+                display: none;
+            }
+        }
+        margin-bottom: 30px;
+    }
+        
+}
+//show desktop/tablet search bar
+@media only screen and (min-width:768px){
+    .searchbar-lg{
+        position:absolute;
+        top:15px;
+        right: 140px;
+
+        & > form{
+            position:relative;
+            & > input{
+                width:200px;
+                height: 56px;
+                border: 1px solid #999aa2;
+                padding-left: 15px;
+                padding-right: 30px;
+
+                &:focus{
+                    
+                    border-color: #5bc0de;
+                    //box-shadow: 0 0 8px rgb(91 192 222 / 60%);
+                    
+                }
+            }
+            & > button{
+                position: absolute;
+                background-color: #999aa2;
+                border: inherit;
+                height: 56px;
+                width: 63px;
+                border-radius: 3px;
+                border-top-left-radius: 0px;
+                border-bottom-left-radius: 0px;
+                top:0px;
+                right: -40px;
+                padding: 7px 20px 3px;
+                & > i {
+                    font-size: 20px;
+                    
+                }
+                &:hover{
+                    background-color: #84858f;
+                }
+                
+            }
+        }       
+    }
+}
+//hide support and contact buttons
+@media only screen and (max-width:992px){
+    .big-beautiful-button{
+        display: none;
+    }
+}
+
+//show contact buttons
+@media only screen and (min-width:992px){
+    //hide tablet/desktop searchbar
+    .searchbar-lg{
+        & > form{
+            border:none;
+            & > input{
+                display:none;
+                
+            }
+            & > button{
+                border-radius: 3px;
+                right: -20px;
+                top:0px;
+            }
+        }      
+    }
+    .support-xl{
+        display:flex;
+        justify-content: space-around;
+        flex-direction: row;
+        border:none;
+        border-radius:3px;
+        color:#fff;
+        position: absolute;
+        top:15px;
+        right: 350px;        
+    }
+    .contact-xl{
+        display:flex;
+        justify-content: space-around;
+        flex-direction: row;
+        border:none;
+        border-radius:3px;
+        color:#fff;
+        position: absolute;
+        top:15px;
+        right: 200px;        
+    }
+    .header-top{
+        width:1010px;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (min-width:1280px){    
+    .header-top{
+        width:1298px;
+        margin: 0 auto;
+    }  
+    .searchbar-lg{
+        & > form{         
+            & > input{
+                display:block;
+                border: 1px solid #999aa2;           
+            }
+            & > button{
+                border-top-left-radius: 0px;
+                border-bottom-left-radius: 0px;
+                right:-40px;
+            }
+        }       
+    }
+    .support-xl{ right: 530px; }
+    .contact-xl{ right: 380px; }
+}
