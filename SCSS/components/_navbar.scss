@@ -1,0 +1,234 @@
+.navbar{
+    border-bottom: #ebebeb 1px solid;
+    background-color: $darkest-blue;
+    position: relative;   
+    & > .tab-wrapper{
+        display:flex;
+        position: relative;
+        border-left: 1px solid hsla(0,0%,100%,.1);
+        border-right: 1px solid rgba(0,0,0,.25);        
+        & > .bar-child{
+            width: 20%;
+            background-color: $darkest-blue;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #fff;
+            border-right: 1px solid hsla(0,0%,100%,.1);
+            border-left: 1px solid rgba(0,0,0,.25);
+            padding-top: 19px;
+            padding-bottom: 18px;
+            line-height: 1;
+            font-size: 1.125rem;
+            
+            &:hover { cursor: pointer; }
+            & > .tab-s-text{ font-size: .625rem; }   
+            & > .icon-tab{
+                padding-bottom: 10px;
+                text-align: center;
+                vertical-align: middle;
+                font-size: 1.3rem;
+                line-height: 1px;
+                position:relative;
+                & > span{
+                    & > i{
+                        font-size: 1.438rem;
+                        line-height: 1;
+                    }
+                }   
+            }
+            & > .dd-background{
+                display: none;
+                padding: 22px 0px;
+                z-index: 10;
+                position:absolute;
+                top: 100%;
+                width: 200vw;
+                @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+                    width: 200vw;
+                    left: -100%;
+                }
+            }
+            & > .drop-down{
+                display:none;
+                flex-direction: row;
+                position:absolute;
+                top: 100%;
+                left: 0%;
+                width: 100vw;
+                padding: 8px 0px;
+                z-index: 10;
+                & > ul{
+                    width: auto;
+                    display:flex;
+                    justify-content: space-between;
+                    float: left;
+                    list-style: none;
+                    text-align: left;
+                    margin: 0 auto;
+                    position: absolute;
+                    left: -15px;
+                    & >li{
+                        display:block;
+                        float:left;
+                        padding: 10px 15px; 
+                    }
+                }
+            }         
+        } 
+        & > .web-tab{
+            &:hover{
+                background-color: #926fb1;
+                & > .icon-tab{
+                    & > span{
+                        & > i{
+                            color: #fff;
+                        }
+                        
+                    }
+                }
+                & > .dd-web{
+                    display:flex;
+                    background-color:  #79539a;
+                    & > ul{
+                        background-color:  #79539a;
+                    }
+                }
+                & > .dd-background{
+                    display: flex;
+                    background-color:  #79539a;
+                }
+            }
+        }
+    
+        & > .IT-tab{
+            &:hover{
+                background-color: #4183d7;
+                & > .icon-tab{
+                    & > span{
+                        & > i{
+                            color: #fff;
+                        }
+                    }
+                }
+                & > .dd-IT{
+                    display: flex;
+                    background-color: #286abd;
+                    & > ul {
+                        background-color: #286abd;
+                    }
+                }
+                & > .dd-background{
+                    display: flex;
+                    background-color:  #286abd;
+                }
+            }
+        }
+    
+        & > .telecoms-tab{
+            &:hover{
+                background-color: #d64541;
+                & > .icon-tab{
+                    & > span{
+                        & > i{
+                            color: #fff;
+                        }
+                    }
+                }
+                & > .dd-telecoms{
+                    display: flex;
+                    background-color: #bc2c28;
+                    & > ul {
+                        background-color: #bc2c28;
+                    }
+                }
+                & > .dd-background{
+                    display: flex;
+                    background-color:  #bc2c28;
+                }
+            }
+        }
+    
+        & > .bespoke-tab{
+            &:hover{
+                background-color: #67809f;
+                & > .icon-tab{
+                    & > span{
+                        & > i{
+                            color: #fff;
+                        }
+                    }
+                }
+                & > .dd-bespoke{
+                    display: flex;
+                    background-color: #526781;
+                    & > ul {
+                        background-color: #526781;
+                    }
+                }
+                & > .dd-background{
+                    display: flex;
+                    background-color:  #526781;
+                }
+            }
+        }
+    
+        & > .marketing-tab{
+            &:hover{
+                background-color: #23cc71;
+                & > .icon-tab{
+                    & > span{
+                        & > i{
+                            color: #fff;
+                        }
+                    }
+                }
+    
+                & > .dd-marketing{
+                    display: flex;
+                    background-color: #25a25a;
+                    & > ul {
+                        background-color: #25a25a;
+                    }
+                }
+                & > .dd-background{
+                    display: flex;
+                    background-color:  #25a25a;
+                }
+            }
+        }
+    
+        & > .security-tab{
+            &:hover{
+                background-color: #f62459;
+                & > .icon-tab{
+                    & > span{
+                        & > i{
+                            color: #fff;
+                        }
+                    }
+                }
+                & > .dd-security{
+                    display: flex;
+                    background-color: #de093f;
+                    & > ul {
+                        background-color: #de093f;
+                    }
+                }
+                & > .dd-background{
+                    display: flex;
+                    background-color:  #de093f;
+                }
+            }
+        }
+
+        & > .tab-s-text{
+            font-size: 0.7rem;
+            
+        }
+        & > .tab-lg-text{
+            font-size: 1.05rem;
+        }
+        
+    }
+}
