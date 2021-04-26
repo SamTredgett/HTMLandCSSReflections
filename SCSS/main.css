@@ -149,6 +149,7 @@ body {
 }
 
 .navbar > .tab-wrapper > .bar-child > .drop-down {
+  text-decoration: none;
   display: none;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;

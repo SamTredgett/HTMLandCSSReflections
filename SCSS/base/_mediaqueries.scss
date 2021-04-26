@@ -122,7 +122,7 @@
         flex-direction: row;
         border:none;
         border-radius:3px;
-        color:#fff;
+        color:$white-text;
         position: absolute;
         top:15px;
         right: 350px;
@@ -135,7 +135,7 @@
         flex-direction: row;
         border:none;
         border-radius:3px;
-        color:#fff;
+        color:$white-text;
         position: absolute;
         top:15px;
         right: 200px;
@@ -433,14 +433,14 @@
             
             & > img {
                 transform: scale(1.1);
-                background-color: #fff;
+                background-color: $white-text;
             }
 
         }  
         
         .cover{
             z-index: 2;
-            background-color: #fff;
+            background-color: $white-text;
         }
                 
     }
