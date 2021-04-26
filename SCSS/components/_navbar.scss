@@ -13,7 +13,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            color: #fff;
+            color: $white-text;
             border-right: 1px solid hsla(0,0%,100%,.1);
             border-left: 1px solid rgba(0,0,0,.25);
             padding-top: 19px;
@@ -78,146 +78,146 @@
         } 
         & > .web-tab{
             &:hover{
-                background-color: #926fb1;
+                background-color: $web-color;
                 & > .icon-tab{
                     & > span{
                         & > i{
-                            color: #fff;
+                            color: $white-text;
                         }
                         
                     }
                 }
                 & > .dd-web{
                     display:flex;
-                    background-color:  #79539a;
+                    background-color:  $web-color-hovered;
                     & > ul{
-                        background-color:  #79539a;
+                        background-color:  $web-color-hovered;
                     }
                 }
                 & > .dd-background{
                     display: flex;
-                    background-color:  #79539a;
+                    background-color:  $web-color-hovered;
                 }
             }
         }
     
         & > .IT-tab{
             &:hover{
-                background-color: #4183d7;
+                background-color: $it-support-color;
                 & > .icon-tab{
                     & > span{
                         & > i{
-                            color: #fff;
+                            color: $white-text;
                         }
                     }
                 }
                 & > .dd-IT{
                     display: flex;
-                    background-color: #286abd;
+                    background-color: $it-support-color-hovered;
                     & > ul {
-                        background-color: #286abd;
+                        background-color: $it-support-color-hovered;
                     }
                 }
                 & > .dd-background{
                     display: flex;
-                    background-color:  #286abd;
+                    background-color:  $it-support-color-hovered;
                 }
             }
         }
     
         & > .telecoms-tab{
             &:hover{
-                background-color: #d64541;
+                background-color: $telecoms-color;
                 & > .icon-tab{
                     & > span{
                         & > i{
-                            color: #fff;
+                            color: $white-text;
                         }
                     }
                 }
                 & > .dd-telecoms{
                     display: flex;
-                    background-color: #bc2c28;
+                    background-color: $telecoms-color-hovered;
                     & > ul {
-                        background-color: #bc2c28;
+                        background-color: $telecoms-color-hovered;
                     }
                 }
                 & > .dd-background{
                     display: flex;
-                    background-color:  #bc2c28;
+                    background-color:  $telecoms-color-hovered;
                 }
             }
         }
     
         & > .bespoke-tab{
             &:hover{
-                background-color: #67809f;
+                background-color: $bespoke-color;
                 & > .icon-tab{
                     & > span{
                         & > i{
-                            color: #fff;
+                            color: $white-text;
                         }
                     }
                 }
                 & > .dd-bespoke{
                     display: flex;
-                    background-color: #526781;
+                    background-color: $bespoke-color-hovered;
                     & > ul {
-                        background-color: #526781;
+                        background-color: $bespoke-color-hovered;
                     }
                 }
                 & > .dd-background{
                     display: flex;
-                    background-color:  #526781;
+                    background-color:  $bespoke-color-hovered;
                 }
             }
         }
     
         & > .marketing-tab{
             &:hover{
-                background-color: #23cc71;
+                background-color: $marketing-color;
                 & > .icon-tab{
                     & > span{
                         & > i{
-                            color: #fff;
+                            color: $white-text;
                         }
                     }
                 }
     
                 & > .dd-marketing{
                     display: flex;
-                    background-color: #25a25a;
+                    background-color: $marketing-color-hovered;
                     & > ul {
-                        background-color: #25a25a;
+                        background-color: $marketing-color-hovered;
                     }
                 }
                 & > .dd-background{
                     display: flex;
-                    background-color:  #25a25a;
+                    background-color:  $marketing-color-hovered;
                 }
             }
         }
     
         & > .security-tab{
             &:hover{
-                background-color: #f62459;
+                background-color: $security-color;
                 & > .icon-tab{
                     & > span{
                         & > i{
-                            color: #fff;
+                            color: $white-text;
                         }
                     }
                 }
                 & > .dd-security{
                     display: flex;
-                    background-color: #de093f;
+                    background-color: $security-color-hovered;
                     & > ul {
-                        background-color: #de093f;
+                        background-color: $security-color-hovered;
                     }
                 }
                 & > .dd-background{
                     display: flex;
-                    background-color:  #de093f;
+                    background-color: $security-color-hovered;
                 }
             }
         }
