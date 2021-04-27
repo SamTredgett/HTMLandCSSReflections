@@ -1144,6 +1144,184 @@ body {
   visibility: visible;
 }
 
+.newsletter {
+  background-color: #ddd;
+  height: 100%;
+}
+
+.sign-up-form {
+  height: 100%;
+  background-color: #ddd;
+  color: #333645;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 30px 30px;
+  margin: 0 30px;
+  position: relative;
+  z-index: 1;
+}
+
+.sign-up-form > .form {
+  padding: 20px 30px;
+}
+
+.sign-up-form > .form > h2 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.sign-up-form > .form > .form-box > .form-group {
+  margin-right: 30px;
+}
+
+.sign-up-form > .form > .form-box > .form-group > label {
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.sign-up-form > .form > .form-box > .form-group > label > span {
+  color: red;
+}
+
+.sign-up-form > .form > .form-box > .form-group > .field {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 5px 15px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  -webkit-box-shadow: inset 0 1px 1px #dddddd;
+          box-shadow: inset 0 1px 1px #dddddd;
+  -webkit-transition: border-color .3s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+  transition: border-color .3s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+  transition: border-color .3s ease-in-out, box-shadow .15s ease-in-out;
+  transition: border-color .3s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+  height: 45px;
+  width: 100%;
+}
+
+.sign-up-form > .form > .form-box > .form-group > .field:focus {
+  border-color: #5bc0de;
+  -webkit-box-shadow: inset 0 1px 1px #dddddd, 0 0 8px #5bc0de;
+          box-shadow: inset 0 1px 1px #dddddd, 0 0 8px #5bc0de;
+}
+
+.sign-up-form > .form > .checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  vertical-align: middle;
+  position: relative;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.sign-up-form > .form > .checkbox > .fakebox-IE {
+  position: absolute;
+  top: 5px;
+  left: 0px;
+  z-index: -1;
+  border: 3px solid #333645;
+  height: 30px;
+  width: 30px;
+  border-radius: 3px;
+  display: none;
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .sign-up-form > .form > .checkbox > .fakebox-IE {
+    display: block;
+  }
+}
+
+.sign-up-form > .form > .checkbox > label {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  display: none;
+}
+
+.sign-up-form > .form > .checkbox > span > label {
+  color: #333645;
+  font-weight: 600;
+  line-height: 32px;
+}
+
+.sign-up-form > .form > .checkbox > span > label:hover {
+  cursor: pointer;
+}
+
+.sign-up-form > .form > .checkbox > input {
+  border: 3px solid #333645;
+  height: 30px;
+  min-width: 30px;
+  margin-top: 5px;
+  margin-right: 15px;
+  border-radius: 3px;
+  display: block;
+}
+
+.sign-up-form > .form > .checkbox > input:checked {
+  background: #333645;
+}
+
+.sign-up-form > .form > .checkbox > input:checked ~ label {
+  display: inline;
+}
+
+.sign-up-form > .form > .checkbox > input:not(:checked) {
+  border: 3px solid #333645;
+  height: 30px;
+  min-width: 30px;
+  margin-top: 5px;
+  margin-right: 15px;
+  border-radius: 3px;
+  display: block;
+}
+
+.sign-up-form > .form > .checkbox > input:hover {
+  cursor: pointer;
+}
+
+.sign-up-form > .form > button {
+  color: #fff;
+  background-color: #333645;
+  border-radius: 3px;
+  border: none;
+  height: auto;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  padding: 10px 15px;
+  font-size: 1.063rem;
+  font-weight: 400;
+}
+
+.sign-up-form > .form > button:hover {
+  background-color: #22242e;
+  border-color: #121419;
+  cursor: pointer;
+}
+
+.policy {
+  color: #333645;
+  text-decoration: underline;
+}
+
+.policy:hover {
+  color: #121419;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 .logo {
   display: block;
   max-width: 100%;
