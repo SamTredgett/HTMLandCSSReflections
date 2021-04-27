@@ -1,0 +1,79 @@
+.companies{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin: 0px 100px;
+    padding: 50px 15px;
+    & > .company{
+        display: inline-block;
+        & > img{
+            vertical-align: middle;
+            max-width: 100%;
+            height: auto;
+        }
+        & > .tooltiptext {
+            visibility: hidden;
+            min-width:260px;
+            height: auto;
+            background-color: $darkest-blue;
+            color: $white-text;
+            text-align: center;
+            padding: 15px 15px;
+            /* Position the tooltip */
+            position: absolute;
+            z-index: 5;
+            bottom: 70%;
+            left: 25%;
+            line-height: 30px;
+            margin-left: -60px;
+            margin-bottom: 70px;
+            font-size: 1.0rem;
+            & > h3{
+                padding: 10px 10px;
+            }
+            & > p{
+                padding: 10px 10px;
+                font-size: .875rem;
+                line-height: 1.42857143;
+            }      
+            &::after{
+                content: "";
+                position: absolute;
+                top: 100%;
+                left: 43%;
+                margin-left: -20px;
+                border-width: 40px;
+                border-style: solid;
+                border-color: $darkest-blue transparent transparent transparent;
+            }
+            & > .spacer-rule{
+                background-color: $white-text;
+                margin: 0 45%;
+            }    
+        }
+        & > .tbeat{
+            left: -35%;
+            //width: 200px;
+        }
+        & > .tcrane{
+            left: 20%;
+        }
+    }
+    & > .con-bus, .con-crane, .con-beat, .con-north{
+        position: relative;
+        & > img:last-of-type{
+            display: none;
+        }
+        &:hover{
+            & > img:first-of-type{
+                display: none;
+            }
+            & > img:last-of-type{
+                display:block;
+            }
+            & > .tooltiptext{
+                visibility:visible;
+            }
+        }
+    }
+}

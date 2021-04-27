@@ -1,0 +1,48 @@
+.culture-back{
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 15px 15px;
+    text-align: left;
+    & > p,h2{
+        color:$white-text;
+        padding: 15px 15px;
+
+        strong{
+            font-weight: 600;
+        }
+    }
+    & >h2{
+        font-weight: 400;
+        font-size: 2.25rem;
+    }
+    & > .btn-culture{
+        color: $darkest-blue;
+        background-color: $white-text;
+        border-radius: 3px;
+        height: 50px;
+        display: block;
+        width: auto;
+        padding: 5px 15px;
+        border: none;
+        line-height: 35px;
+        margin-top: 15px;
+        margin-bottom: 30px;
+        margin-left:15px;
+        justify-content: space-between;
+        & > a{
+            color: $darkest-blue;
+            position: relative;
+            & > img{
+                position: absolute;
+                top: 0px;
+                left: 110%;
+            }
+        }
+        &:hover{
+            background-color:#ebebeb;
+        }
+    }
+}
+.culture{
+    background-color: $darkest-blue;
+}

@@ -784,6 +784,366 @@ body {
   color: #79539a;
 }
 
+.culture-back {
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 15px 15px;
+  text-align: left;
+}
+
+.culture-back > p, .culture-back h2 {
+  color: #fff;
+  padding: 15px 15px;
+}
+
+.culture-back > p strong, .culture-back h2 strong {
+  font-weight: 600;
+}
+
+.culture-back > h2 {
+  font-weight: 400;
+  font-size: 2.25rem;
+}
+
+.culture-back > .btn-culture {
+  color: #333645;
+  background-color: #fff;
+  border-radius: 3px;
+  height: 50px;
+  display: block;
+  width: auto;
+  padding: 5px 15px;
+  border: none;
+  line-height: 35px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  margin-left: 15px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.culture-back > .btn-culture > a {
+  color: #333645;
+  position: relative;
+}
+
+.culture-back > .btn-culture > a > img {
+  position: absolute;
+  top: 0px;
+  left: 110%;
+}
+
+.culture-back > .btn-culture:hover {
+  background-color: #ebebeb;
+}
+
+.culture {
+  background-color: #333645;
+}
+
+.news-header-con {
+  -webkit-box-shadow: inset 0 0px 0px #cccccc;
+          box-shadow: inset 0 0px 0px #cccccc;
+}
+
+.news-header-section {
+  padding: 40px 30px;
+  margin-bottom: 30px;
+}
+
+.news-header-section > .latest {
+  padding-left: 0px;
+  padding-bottom: 0px;
+  display: inline-block;
+  margin-bottom: -10px;
+  color: #333645;
+  font-size: 1.25rem;
+  position: relative;
+}
+
+.news-header-section > .latest > .bar-news::after {
+  content: "";
+  position: absolute;
+  top: 64px;
+  left: 0;
+  right: 0;
+  background-color: #333645;
+  height: 5px;
+}
+
+.news-section {
+  -webkit-box-shadow: inset 0 0px 0px #cccccc;
+          box-shadow: inset 0 0px 0px #cccccc;
+}
+
+.news-section .news-cards {
+  padding: 10px 0px;
+  margin: 0px auto;
+}
+
+.news-section .news-cards > .card-news:first-of-type > .news-container {
+  margin-top: 16px;
+}
+
+.news-section .news-cards > .card-news {
+  margin: 20px 20px;
+}
+
+.news-section .news-cards > .card-news > .minilink {
+  position: absolute;
+  top: 10px;
+  right: 0%;
+  background-color: #926fb1;
+  color: #fff;
+  text-decoration: none;
+  z-index: 3;
+  padding: 5px 10px;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: .4px;
+}
+
+.news-section .news-cards > .card-news > .minilink:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.news-section .news-cards > .card-news > .news-image {
+  width: 100%;
+  height: auto;
+  border-radius: 3px;
+  border: none;
+  overflow: hidden;
+  position: relative;
+}
+
+.news-section .news-cards > .card-news > .news-image > .img-overlay > .cover {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  -webkit-transition: background-color .3s linear;
+  transition: background-color .3s linear;
+  opacity: 0.3;
+}
+
+.news-section .news-cards > .card-news > .news-image > .img-overlay > img {
+  width: 100%;
+  background-size: cover;
+  height: auto;
+  -webkit-transition: background-color .3s, -webkit-transform .3s;
+  transition: background-color .3s, -webkit-transform .3s;
+  transition: transform .3s, background-color .3s;
+  transition: transform .3s, background-color .3s, -webkit-transform .3s;
+  opacity: 1;
+}
+
+.news-section .news-cards > .card-news > .news-container {
+  padding: 30px 30px;
+  position: relative;
+  height: 330px;
+}
+
+.news-section .news-cards > .card-news > .news-container > p {
+  color: #666;
+  margin-bottom: 30px;
+  font-size: .8125rem;
+}
+
+.news-section .news-cards > .card-news > .news-container > h4 {
+  color: #000;
+}
+
+.news-section .news-cards > .card-news > .news-container > .heading-link {
+  color: #926fb1;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+
+.news-section .news-cards > .card-news > .news-container > .heading-link:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.news-section .news-cards > .card-news > .news-container > .readmore-btn {
+  color: #fff;
+  background-color: #926fb1;
+  border-radius: 3px;
+  border: none;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  padding: 10px 15px;
+  position: absolute;
+  top: 150px;
+  left: 30px;
+}
+
+.news-section .news-cards > .card-news > .news-container > .readmore-btn:hover {
+  background-color: #7e57a0;
+  cursor: pointer;
+}
+
+.news-section .news-cards > .card-news > .news-container > .foot-wrapper {
+  position: absolute;
+  top: 220px;
+  bottom: 0;
+  left: 30px;
+  right: 0;
+}
+
+.news-section .news-cards > .card-news > .news-container > .foot-wrapper > .card-foot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  vertical-align: middle;
+  width: 100%;
+  position: relative;
+  margin-top: 10px;
+}
+
+.news-section .news-cards > .card-news > .news-container > .foot-wrapper > .card-foot::before {
+  position: absolute;
+  top: -5px;
+  left: 0px;
+  content: "";
+  width: 90%;
+  height: 2px;
+  background-color: #ddd;
+}
+
+.news-section .news-cards > .card-news > .news-container > .foot-wrapper > .card-foot > .avatar, .news-section .news-cards > .card-news > .news-container > .foot-wrapper > .card-foot .post-info {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.news-section .news-cards > .card-news > .news-container > .foot-wrapper > .card-foot > .avatar > .minilogo, .news-section .news-cards > .card-news > .news-container > .foot-wrapper > .card-foot .post-info > .minilogo {
+  height: auto;
+  width: 47px;
+}
+
+.news-section .news-cards > .card-news > .news-container > .foot-wrapper > .card-foot > .post-info {
+  padding-left: 20px;
+  padding-top: 20px;
+  line-height: 20px;
+  height: auto;
+  font-size: .875rem;
+}
+
+.news-section .news-cards > .card-news > .news-container > .foot-wrapper > .card-foot > .post-info > p {
+  color: #666;
+}
+
+.news-section .news-cards > .card-news > .news-container > .foot-wrapper > .card-foot > .avatar {
+  margin-top: 15px;
+}
+
+.companies {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 0px 100px;
+  padding: 50px 15px;
+}
+
+.companies > .company {
+  display: inline-block;
+}
+
+.companies > .company > img {
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+}
+
+.companies > .company > .tooltiptext {
+  visibility: hidden;
+  min-width: 260px;
+  height: auto;
+  background-color: #333645;
+  color: #fff;
+  text-align: center;
+  padding: 15px 15px;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 5;
+  bottom: 70%;
+  left: 25%;
+  line-height: 30px;
+  margin-left: -60px;
+  margin-bottom: 70px;
+  font-size: 1.0rem;
+}
+
+.companies > .company > .tooltiptext > h3 {
+  padding: 10px 10px;
+}
+
+.companies > .company > .tooltiptext > p {
+  padding: 10px 10px;
+  font-size: .875rem;
+  line-height: 1.42857143;
+}
+
+.companies > .company > .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 43%;
+  margin-left: -20px;
+  border-width: 40px;
+  border-style: solid;
+  border-color: #333645 transparent transparent transparent;
+}
+
+.companies > .company > .tooltiptext > .spacer-rule {
+  background-color: #fff;
+  margin: 0 45%;
+}
+
+.companies > .company > .tbeat {
+  left: -35%;
+}
+
+.companies > .company > .tcrane {
+  left: 20%;
+}
+
+.companies > .con-bus, .companies .con-crane, .companies .con-beat, .companies .con-north {
+  position: relative;
+}
+
+.companies > .con-bus > img:last-of-type, .companies .con-crane > img:last-of-type, .companies .con-beat > img:last-of-type, .companies .con-north > img:last-of-type {
+  display: none;
+}
+
+.companies > .con-bus:hover > img:first-of-type, .companies .con-crane:hover > img:first-of-type, .companies .con-beat:hover > img:first-of-type, .companies .con-north:hover > img:first-of-type {
+  display: none;
+}
+
+.companies > .con-bus:hover > img:last-of-type, .companies .con-crane:hover > img:last-of-type, .companies .con-beat:hover > img:last-of-type, .companies .con-north:hover > img:last-of-type {
+  display: block;
+}
+
+.companies > .con-bus:hover > .tooltiptext, .companies .con-crane:hover > .tooltiptext, .companies .con-beat:hover > .tooltiptext, .companies .con-north:hover > .tooltiptext {
+  visibility: visible;
+}
+
 .logo {
   display: block;
   max-width: 100%;

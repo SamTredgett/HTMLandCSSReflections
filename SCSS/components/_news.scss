@@ -1,0 +1,170 @@
+.news-header-con{
+    box-shadow: inset 0 0px 0px rgba($shadow-light-grey, 90%);
+}
+.news-header-section{
+    padding: 40px 30px;
+    margin-bottom: 30px;
+    & > .latest{
+        padding-left:0px;
+        padding-bottom: 0px;
+        display: inline-block;
+        margin-bottom: -10px;
+        color: $darkest-blue;
+        font-size: 1.25rem;
+        position: relative;
+        & > .bar-news::after{
+            content: "";
+            position: absolute;
+            top: 64px;
+            left: 0;
+            right: 0;
+            background-color: $darkest-blue;
+            height: 5px;
+        }      
+    }
+}
+.news-section{
+    box-shadow: inset 0 0px 0px rgba($shadow-light-grey, 90%);
+    .news-cards{
+        padding: 10px 0px;
+        margin: 0px auto;
+        & > .card-news:first-of-type{
+            & > .news-container{
+                margin-top: 16px;
+            }
+        }
+        & > .card-news{
+            margin: 20px 20px;
+            & > .minilink{
+                position: absolute;
+                top: 10px;
+                right: 0%;
+                background-color: $web-color;
+                color: $white-text;
+                text-decoration: none;
+                z-index: 3;
+                padding: 5px 10px;
+                font-weight: 600;
+                font-size: 12px;
+                letter-spacing: .4px;         
+                &:hover{
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
+            }         
+            & > .news-image{
+                width: 100%;
+                height: auto;
+                border-radius: 3px;
+                border:none;
+                overflow: hidden;
+                position: relative;
+                & > .img-overlay{
+                    & > .cover{
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        z-index: 1;
+                        transition: background-color .3s linear;
+                        opacity: 0.3;
+                    }                    
+                    & > img{
+                        width: 100%;
+                        background-size: cover;
+                        height: auto;
+                        transition: transform .3s, background-color .3s;
+                        opacity: 1;
+                    }                    
+                }
+            }    
+            & > .news-container{
+                padding: 30px 30px;               
+                position: relative;
+                height: 330px;
+                & > p{
+                    color: #666;
+                    margin-bottom: 30px;
+                    font-size: .8125rem;
+                }
+                & > h4{
+                    color: #000;
+                }   
+                & > .heading-link{
+                    color: $web-color;
+                    text-decoration: none;
+                    font-size: 1rem;
+                    font-weight: 600;
+                    padding-bottom: 10px;
+                    &:hover{
+                        text-decoration: underline;
+                        cursor: pointer;
+                    }
+                }
+                & > .readmore-btn{
+                    color: $white-text;
+                    background-color: $web-color;
+                    border-radius: 3px;
+                    border: none;
+                    margin-top: 5px;
+                    margin-bottom: 20px;
+                    padding: 10px 15px;
+                    position: absolute;
+                    top: 150px;
+                    left: 30px;           
+                    &:hover{
+                        background-color: #7e57a0;
+                        cursor: pointer;
+                    }
+                }             
+                & > .foot-wrapper{
+                    position: absolute;
+                    top: 220px;
+                    bottom: 0;
+                    left: 30px;
+                    right: 0;                    
+                    & > .card-foot{
+                        display:flex;
+                        flex-wrap: nowrap;
+                        justify-content: flex-start;
+                        vertical-align: middle;
+                        width:100%;
+                        position: relative;
+                        margin-top: 10px;
+                        &::before{
+                            position: absolute;
+                            top: -5px;
+                            left: 0px;
+                            content: "";
+                            width:90%;
+                            height: 2px;
+                            background-color: $off-white;               
+                        }                               
+                        & > .avatar, .post-info{
+                            display: inline-block;
+                            vertical-align: middle;                                  
+                            & > .minilogo{
+                                height: auto;
+                                width: 47px;                               
+                            }
+                        }      
+                        & > .post-info{
+                            padding-left: 20px;
+                            padding-top: 20px;
+                            line-height: 20px;
+                            height:auto;
+                            font-size: .875rem;
+                            & > p{
+                                color: #666;
+                            }
+                        }
+                        & > .avatar{
+                            margin-top: 15px;                         
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
