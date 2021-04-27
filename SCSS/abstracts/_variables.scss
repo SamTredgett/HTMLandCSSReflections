@@ -25,3 +25,19 @@ $marketing-color-hovered:#25a25a;
 
 $security-color: #de093f;
 $security-color-hovered: #f62459;
+
+
+// screen width variables
+
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 576px;
+
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+
+// Tablets and small desktops
+$screen-lg-min: 1009px;
+
+// Large tablets and desktops
+$screen-xl-min: 1280px;
+

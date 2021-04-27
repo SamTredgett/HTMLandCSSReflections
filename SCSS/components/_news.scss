@@ -143,10 +143,12 @@
                         }                               
                         & > .avatar, .post-info{
                             display: inline-block;
-                            vertical-align: middle;                                  
+                            vertical-align: middle;
+                                                              
                             & > .minilogo{
                                 height: auto;
-                                width: 47px;                               
+                                width: 47px;
+                                border-radius: 50%;                               
                             }
                         }      
                         & > .post-info{
@@ -160,11 +162,18 @@
                             }
                         }
                         & > .avatar{
-                            margin-top: 15px;                         
+                            margin-top: 15px;     
+                                               
                         }
                     }
                 }
             }
         }
+    }
+}
+// Fix for allowing round icons
+.avatar {
+    &-img{
+        border-radius: 50%;
     }
 }
