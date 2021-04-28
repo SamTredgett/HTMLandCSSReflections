@@ -1,9 +1,7 @@
 @import "abstracts/variables";
 
-@import "pages/index";
-
 @import "components/navbar";
-@import "components/hamburger";
+
 @import "components/banner";
 @import "components/card";
 @import "components/culture";
@@ -11,11 +9,13 @@
 @import "components/companies";
 @import "components/newsletter";
 
+@import "base/base";
+@import "base/typography";
 
 @import "layout/header";
 @import "layout/footer";
 
+@import "components/hamburger";
 
+@import "pages/index";
 @import "base/mediaqueries";
-@import "base/base";
-@import "base/typography";

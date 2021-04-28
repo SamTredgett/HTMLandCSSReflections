@@ -646,14 +646,14 @@
     }
 }
 
-// @media (max-width:$screen-lg-min ) and (min-width:440px) {
-//     .searchbar-mobile{ 
-//         display:flex;
-//         flex-basis:auto;
-//         order:last;
+@media (max-width:$screen-lg-min ) and (min-width:440px) {
+    .searchbar-mobile{ 
+        display:flex;
+        flex-basis:auto;
+        order:last;
 
-//     }
-// }
+    }
+}
 
 
 
