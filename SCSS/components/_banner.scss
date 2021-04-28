@@ -1,53 +1,72 @@
+// ====================================================================================
+// Main Styling for the banner element
+// ====================================================================================
+
 .banner{
+    // Makes the banner fit the container size
     height: 100%;
     min-width: 100%;
+    position: relative;
+    // Adding in the security image in the background
     background-image: url("../../img/security.jpg");
+    background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
-    position: relative;
-    
-     & > .banner-overlay{
+   
+
+     & > .banner-overlay{   // This creates a subtle darkening gradient that layers over the top of the image
          width: 100%;
          height: 100%;
          background: linear-gradient(270deg, transparent 0%, #000),
          rgba(0,0,0,0.15);
-         
- 
-         & > .banner-text{
-             & > h1{
-                 font-size: 3rem;
+         & > .banner-text{   // Adjusting text inside the banner 
+             & > h1{  
+                 // Make the heading text larger and bolder
+                 font-size: 3rem;  
                  letter-spacing: .4px;
                  font-weight: 400;
              }
+
+             // Some text alignment settings, centers and prevents it from moving around madly
              margin: 0 auto;
              text-align: center;
              display: block;
              padding: 20% 0%;
              justify-content: center;
              color:$white-text;
-             & > a{
-                 color:$white-text;
-             }
- 
+             & > a{ color:$white-text; } // Anchor tags set to white
+             
              & > .btn-banner{
-                 background-color: $security-color;
-                 border-radius: 3px;
-                 border: none;
-                 padding: 15px 15px;
-                 margin: 30px 0;
-                 color:$white-text;
- 
-                 &:hover{
-                     background-color: $security-color-darker;
-                     cursor: pointer;
-                 }
-             }
-         }
-     }
- }
+                // Setting the button element to match the content
+                // Cyber Sec colour scheme
+                background-color: $security-color;
+                color:$white-text; 
+                
+                // Spacing and positioning relative to other elements
+                border-radius: 3px;               
+                border: none;                      
+                padding: 5px 20px;                 
+                height: auto;                      
+                font-size:1.25rem;                 
+                line-height: 50px;                                         
+                margin: 30px 0;   
+                // ====================================================================================
+                      
+                &:hover{
+                    background-color: $security-color-darker;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
 
- // Media Queries for the banner element
+
+
+// ====================================================================================
+// Media Queries for the banner element
+// ====================================================================================
+
  @media only screen and (min-width:$screen-xl-min)
 {
     .banner-text{

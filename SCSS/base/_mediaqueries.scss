@@ -1,39 +1,26 @@
-
-
-
-
 // General element hides/fixes
-
+ 
 //test fix for objects not disappearing at smaller resolutions
-// @media only screen and (max-width:$screen-md-min){
-//     .hidden-sm {
-//         display:none!important;
-//     }
-// }
-
-@media (max-width: $screen-lg-min){
-    .hidden-sm{
+@media only screen and (max-width:$screen-md-min) {
+    .hidden-sm {
         display:none!important;
     }
-}
-//establishing hidden-xs class properly
-@media (max-width:$screen-md-min) {
     .hidden-xs {
         display:none!important;
     }
 }
-@media (max-width:$screen-lg-min ) and (min-width:440px) {
-    .searchbar-mobile{ 
-        display:flex;
-        flex-basis:auto;
-        order:last;
+// Hides objects at screen sizes smaller than 1009px (Value of $screen-lg-min)
+@media (max-width: $screen-lg-min) {
+    .hidden-sm{
+        display:none!important;
     }
 }
 
+// ====================================================================================
+// Universal display queries
+// ====================================================================================
 
-//universal display queries
-
-//mobiles
+//Mobile phone viewing
 @media only screen and (max-width: 443px){
     .header-inner, .searchbar-mobile, .banner-text,
     .nav-cards, .culture-back, .news-header-section,
@@ -42,7 +29,7 @@
         margin: 0 auto;
     }
 }
-//tablets
+// Tablet size viewing
 @media only screen and (min-width: $screen-md-min){
     .header-inner, .searchbar-mobile, .banner-text,
     .nav-cards, .culture-back, .news-header-section,
@@ -59,10 +46,7 @@
         width: $screen-lg-min;
         margin: 0 auto;
     }
-    
-    
 }
-
 
 @media only screen and (min-width: $screen-xl-min){
     .header-inner, .searchbar-mobile, .banner-text, .tab-wrapper,

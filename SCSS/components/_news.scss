@@ -28,11 +28,6 @@
     .news-cards{
         padding: 10px 0px;
         margin: 0px auto;
-        & > .card-news:first-of-type{
-            & > .news-container{
-                margin-top: 16px;
-            }
-        }
         & > .card-news{
             margin: 20px 20px;
             & > .minilink{
