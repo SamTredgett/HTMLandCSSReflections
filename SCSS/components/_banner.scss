@@ -60,8 +60,11 @@
         }
     }
 }
+// ====================================================================================
+// End of styling for the banner element
+// ====================================================================================
 
-
+// ####################################################################################
 
 // ====================================================================================
 // Media Queries for the banner element
@@ -73,12 +76,12 @@
  @media only screen and (min-width:$screen-xl-min){ // Internal banner elements on left side at larger screen size
     .banner-text{
         width: 1300px;
-        & > h1, p{ text-align: left; }
-        & > button{ float: left;  }
+        & > h1, p { text-align: left; }
+        & > button{ float: left;      }
         
     } 
 }
 
 // ====================================================================================
-// End of Media Queries for banner element
+// End of Media Queries for the banner element
 // ====================================================================================

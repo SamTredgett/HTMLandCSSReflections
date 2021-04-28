@@ -1,9 +1,16 @@
+// ====================================================================================
+// Styling for the companies components
+// ====================================================================================
+
 .companies{
+    // Setting the flexbox portion for the companies logos
     display: flex;
     justify-content: space-around;
     flex-direction: row;
+    // Some internal settings
     margin: 0px 100px;
     padding: 50px 15px;
+    // ====================================================================================
     & > .company{
         display: inline-block;
         & > img{
@@ -11,15 +18,18 @@
             max-width: 100%;
             height: auto;
         }
-        & > .tooltiptext {
+        & > .tooltiptext { 
+            // Settings for the speech bubble that pops up on hover
+            // Colours
+            background-color: $darkest-blue;
+            color: $white-text;
+
+            // hiding text and setting sizing and placement inside parent object
             visibility: hidden;
             min-width:260px;
             height: auto;
-            background-color: $darkest-blue;
-            color: $white-text;
             text-align: center;
             padding: 15px 15px;
-            /* Position the tooltip */
             position: absolute;
             z-index: 5;
             bottom: 70%;
@@ -28,38 +38,43 @@
             margin-left: -60px;
             margin-bottom: 70px;
             font-size: 1.0rem;
+            // ====================================================================================
             & > h3{
                 padding: 10px 10px;
             }
             & > p{
+                // Some basic text settings and padding for the main paragraph element
                 padding: 10px 10px;
                 font-size: .875rem;
                 line-height: 1.42857143;
             }      
             &::after{
+                // Positioning
                 content: "";
                 position: absolute;
                 top: 100%;
                 left: 43%;
                 margin-left: -20px;
+
+                // Border settings to prettify it
                 border-width: 40px;
                 border-style: solid;
                 border-color: $darkest-blue transparent transparent transparent;
+                // ====================================================================================
+                
             }
             & > .spacer-rule{
                 background-color: $white-text;
                 margin: 0 45%;
             }    
         }
-        & > .tbeat{
-            left: -35%;
-            //width: 200px;
-        }
-        & > .tcrane{
-            left: 20%;
-        }
+        // Centering the tool tips above individual logos 
+        & > .tbeat  { left: -45%;   }
+        & > .tcrane { left:  -0%;   }
+        & > .tbus   { left:  10%;   }
+        & > .tnorth { left:  18%;   }
     }
-    & > .con-bus, .con-crane, .con-beat, .con-north{
+    & >  .con-beat, .con-bus, .con-crane, .con-north {
         position: relative;
         & > img:last-of-type{
             display: none;
@@ -77,25 +92,22 @@
         }
     }
 }
+// ====================================================================================
+// End of Styling for the companies components
+// ====================================================================================
 
+// ####################################################################################
+
+// ====================================================================================
 // Media Queries for the companies components
-
-@media only screen and (max-width: $screen-md-min){
+// ====================================================================================
+// hidden at smaller resolutions
+@media only screen and (max-width: $screen-md-min){ 
     .companies, .awards-1, .awards-2, .awards{
         display:none;
     }
 }
-
-@media only screen and (max-width: $screen-lg-min){
-    .companies{
-        & > .company{
-            & >img{
-                transform: scale(0.8);
-            }
-        }
-    }
-}
-
+// Reduce the scale a fraction at slightly smaller screen resolutions
 @media only screen and (max-width: $screen-xl-min){
     .companies{
         & > .company{
@@ -105,3 +117,16 @@
         }
     }
 }
+// Reduce scale a fraction further at slightly smaller screens
+@media only screen and (max-width: $screen-lg-min){
+    .companies{
+        & > .company{
+            & >img{
+                transform: scale(0.8);
+            }
+        }
+    }
+}
+// ====================================================================================
+// End of media queries for the companies components
+// ====================================================================================

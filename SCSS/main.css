@@ -1076,14 +1076,13 @@
 }
 
 .companies > .company > .tooltiptext {
+  background-color: #333645;
+  color: #fff;
   visibility: hidden;
   min-width: 260px;
   height: auto;
-  background-color: #333645;
-  color: #fff;
   text-align: center;
   padding: 15px 15px;
-  /* Position the tooltip */
   position: absolute;
   z-index: 5;
   bottom: 70%;
@@ -1121,30 +1120,38 @@
 }
 
 .companies > .company > .tbeat {
-  left: -35%;
+  left: -45%;
 }
 
 .companies > .company > .tcrane {
-  left: 20%;
+  left: -0%;
 }
 
-.companies > .con-bus, .companies .con-crane, .companies .con-beat, .companies .con-north {
+.companies > .company > .tbus {
+  left: 10%;
+}
+
+.companies > .company > .tnorth {
+  left: 18%;
+}
+
+.companies > .con-beat, .companies .con-bus, .companies .con-crane, .companies .con-north {
   position: relative;
 }
 
-.companies > .con-bus > img:last-of-type, .companies .con-crane > img:last-of-type, .companies .con-beat > img:last-of-type, .companies .con-north > img:last-of-type {
+.companies > .con-beat > img:last-of-type, .companies .con-bus > img:last-of-type, .companies .con-crane > img:last-of-type, .companies .con-north > img:last-of-type {
   display: none;
 }
 
-.companies > .con-bus:hover > img:first-of-type, .companies .con-crane:hover > img:first-of-type, .companies .con-beat:hover > img:first-of-type, .companies .con-north:hover > img:first-of-type {
+.companies > .con-beat:hover > img:first-of-type, .companies .con-bus:hover > img:first-of-type, .companies .con-crane:hover > img:first-of-type, .companies .con-north:hover > img:first-of-type {
   display: none;
 }
 
-.companies > .con-bus:hover > img:last-of-type, .companies .con-crane:hover > img:last-of-type, .companies .con-beat:hover > img:last-of-type, .companies .con-north:hover > img:last-of-type {
+.companies > .con-beat:hover > img:last-of-type, .companies .con-bus:hover > img:last-of-type, .companies .con-crane:hover > img:last-of-type, .companies .con-north:hover > img:last-of-type {
   display: block;
 }
 
-.companies > .con-bus:hover > .tooltiptext, .companies .con-crane:hover > .tooltiptext, .companies .con-beat:hover > .tooltiptext, .companies .con-north:hover > .tooltiptext {
+.companies > .con-beat:hover > .tooltiptext, .companies .con-bus:hover > .tooltiptext, .companies .con-crane:hover > .tooltiptext, .companies .con-north:hover > .tooltiptext {
   visibility: visible;
 }
 
@@ -1154,17 +1161,17 @@
   }
 }
 
-@media only screen and (max-width: 1009px) {
-  .companies > .company > img {
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8);
-  }
-}
-
 @media only screen and (max-width: 1280px) {
   .companies > .company > img {
     -webkit-transform: scale(0.9);
             transform: scale(0.9);
+  }
+}
+
+@media only screen and (max-width: 1009px) {
+  .companies > .company > img {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
   }
 }
 
