@@ -90,14 +90,14 @@
                 }
                 & > .dd-web{
                     display:flex;
-                    background-color:  $web-color-hovered;
+                    background-color:  $web-color-darker;
                     & > ul{
-                        background-color:  $web-color-hovered;
+                        background-color:  $web-color-darker;
                     }
                 }
                 & > .dd-background{
                     display: flex;
-                    background-color:  $web-color-hovered;
+                    background-color:  $web-color-darker;
                 }
             }
         }
@@ -114,14 +114,14 @@
                 }
                 & > .dd-IT{
                     display: flex;
-                    background-color: $it-support-color-hovered;
+                    background-color: $it-support-color-darker;
                     & > ul {
-                        background-color: $it-support-color-hovered;
+                        background-color: $it-support-color-darker;
                     }
                 }
                 & > .dd-background{
                     display: flex;
-                    background-color:  $it-support-color-hovered;
+                    background-color:  $it-support-color-darker;
                 }
             }
         }
@@ -138,14 +138,14 @@
                 }
                 & > .dd-telecoms{
                     display: flex;
-                    background-color: $telecoms-color-hovered;
+                    background-color: $telecoms-color-darker;
                     & > ul {
-                        background-color: $telecoms-color-hovered;
+                        background-color: $telecoms-color-darker;
                     }
                 }
                 & > .dd-background{
                     display: flex;
-                    background-color:  $telecoms-color-hovered;
+                    background-color:  $telecoms-color-darker;
                 }
             }
         }
@@ -162,14 +162,14 @@
                 }
                 & > .dd-bespoke{
                     display: flex;
-                    background-color: $bespoke-color-hovered;
+                    background-color: $bespoke-color-darker;
                     & > ul {
-                        background-color: $bespoke-color-hovered;
+                        background-color: $bespoke-color-darker;
                     }
                 }
                 & > .dd-background{
                     display: flex;
-                    background-color:  $bespoke-color-hovered;
+                    background-color:  $bespoke-color-darker;
                 }
             }
         }
@@ -187,14 +187,14 @@
     
                 & > .dd-marketing{
                     display: flex;
-                    background-color: $marketing-color-hovered;
+                    background-color: $marketing-color-darker;
                     & > ul {
-                        background-color: $marketing-color-hovered;
+                        background-color: $marketing-color-darker;
                     }
                 }
                 & > .dd-background{
                     display: flex;
-                    background-color:  $marketing-color-hovered;
+                    background-color:  $marketing-color-darker;
                 }
             }
         }
@@ -211,14 +211,14 @@
                 }
                 & > .dd-security{
                     display: flex;
-                    background-color: $security-color-hovered;
+                    background-color: $security-color-darker;
                     & > ul {
-                        background-color: $security-color-hovered;
+                        background-color: $security-color-darker;
                     }
                 }
                 & > .dd-background{
                     display: flex;
-                    background-color: $security-color-hovered;
+                    background-color: $security-color-darker;
                 }
             }
         }
@@ -231,5 +231,149 @@
             font-size: 1.05rem;
         }
         
+    }
+}
+
+
+// Media Queries for the navbar component
+
+@media only screen and (max-width:1010px){
+    .navbar{
+        display: none;
+    }
+}
+@media only screen and (min-width:1010px){
+    .navbar{
+        & > .tab-wrapper{
+            width: $screen-lg-min;
+            margin: 0 auto;
+            & > .bar-child{
+                & > .drop-down{
+                    & > ul{
+                        & > li{
+                            font-size: 0.805rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+@media only screen and (min-width:$screen-xl-min){
+    .navbar{
+        .tab-wrapper{
+            min-width: 1298px;
+            margin: 0 auto;
+            & > .bar-child{
+                & > .drop-down{
+                    & > ul{
+                        & > li{
+                            font-size: 1.0rem;
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+    
+}
+
+@media only screen and (max-width: $screen-lg-min){
+    .bespoke,.marketing,.IT,.telecoms,.security,.web-design,.schools{
+        width: 100%;
+        display:block;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (min-width: $screen-md-min) and (max-width:$screen-xl-min){
+    .lg-row-nav{
+        display: flex;
+        width: $screen-md-min;
+        justify-content: space-around;
+        margin: 0 auto;
+    }
+
+    .security,.schools,.web-design,.telecoms{
+        width: 50%;
+        display:block;
+        margin: 0 auto;
+        
+        
+    }
+    .card-security,.card-schools,.card-web,.card-telecoms{
+        width: 50%;
+        display:block;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (min-width: $screen-lg-min){
+    .xl-row-nav{
+        display:flex;
+        width: $screen-lg-min;
+        margin: 25px auto;
+        & > .card-nav{
+            @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+                width: 33.3%;
+            }  
+        }
+    }
+    .bespoke,.IT,.marketing{
+        width: 33.3%;
+        float:left;
+        display:block;
+        margin: 0 auto;   
+    }
+}
+
+@media only screen and (min-width: $screen-xl-min){
+    .nav-cards{
+        width: 1298px;
+        margin: 0 auto;
+    }
+    
+    .xxl-row-nav{
+        display:flex;
+        flex-direction: row;
+        margin: 45px auto;
+    }
+    .lg-row-nav{
+        display:flex;
+        justify-content: space-around;
+        margin: 0 auto;
+        padding: 0 0;    
+    }
+    .card-security,.card-schools,.card-web,.card-telecoms{
+        width: 45%;
+        height: 100%;
+        display:block;
+        float:left;
+        margin: 0 auto;    
+    }
+    .security,.schools,.web-design,.telecoms{
+        width: 45%;
+        height: 100%;
+        display:block;
+        float:left;
+        margin: 0 auto;
+        
+        
+    }
+
+    
+
+
+
+}
+
+@-moz-document url-prefix(){
+    .card-nav{
+        & > p{
+            margin-bottom: 15px;
+        }
     }
 }

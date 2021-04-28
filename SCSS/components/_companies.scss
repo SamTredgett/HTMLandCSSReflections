@@ -77,3 +77,31 @@
         }
     }
 }
+
+// Media Queries for the companies components
+
+@media only screen and (max-width: $screen-md-min){
+    .companies, .awards-1, .awards-2, .awards{
+        display:none;
+    }
+}
+
+@media only screen and (max-width: $screen-lg-min){
+    .companies{
+        & > .company{
+            & >img{
+                transform: scale(0.8);
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $screen-xl-min){
+    .companies{
+        & > .company{
+            & >img{
+                transform: scale(0.9);
+            }
+        }
+    }
+}

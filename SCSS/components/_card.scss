@@ -17,7 +17,7 @@
             // box-shadow: 0 3px 35px rgb(0 0 0 / 10%);
             box-shadow: inset 0 0px 0px rgba($shadow-light-grey, 90%);
             text-align: center;
-            border: 1px solid #ccc;
+            border: 1px solid $shadow-light-grey;
             border-radius: 3px;
             margin: 1rem 1rem;
             
@@ -115,140 +115,107 @@
 
 
 // colour settings for the card interactions via hover etc. to invert colours 
-.bespoke, #btn-bespoke{
-    background-color: $bespoke-color;
-    
-}
-.IT, #btn-IT{
-    background-color: $it-support-color;
-}
 
-.marketing, #btn-marketing{
-    background-color: $marketing-color;
-   
-}
-.telecoms, #btn-telecoms{
-    background-color: $telecoms-color;
-    
-}
-.security, #btn-security{
-    background-color: $security-color-hovered;
-}
-.web-design, #btn-web{
-    background-color: $web-color-hovered;
-}
-.schools, #btn-school{
-    background-color: $web-color-hovered;
-}
+// Initial card background colours before ::hover
+.bespoke, #btn-bespoke{  background-color: $bespoke-color; }             // Bespoke Software
+.IT, #btn-IT{  background-color: $it-support-color;}                     // IT Support
+.marketing, #btn-marketing{ background-color: $marketing-color;}         // Marketing
+.telecoms, #btn-telecoms{ background-color: $telecoms-color;}            // Telecoms
+.web-design, #btn-web{ background-color: $web-color-darker;}            // Web Design
+.security, #btn-security{ background-color: $security-color-darker;}    // Security
+.schools, #btn-school{ background-color: $web-color-darker;}            // Devekoper Training
 
+
+// Changes to card colours and internal element colours on ::hover
+// Bespoke Software Card
 .card-bespoke:hover{
     .nav-icon-con, #btn-bespoke{
         background-color: $white-text;
         color: $bespoke-color;
-    }
-    .spacer-rule{
-        background-color: $white-text;
-    }
-
-    i{
-        color: $bespoke-color;
-    }
+ }
+    .spacer-rule{ background-color: $white-text; }
+    i{ color: $bespoke-color; }
     background-color: $bespoke-color;
     color: $white-text;
     cursor: pointer;
 }
 
+// IT Support Card
 .card-IT:hover{
     .nav-icon-con, #btn-IT{
         background-color: $white-text;
         color: $it-support-color;
-    }
-    .spacer-rule{
-        background-color: $white-text;
-    }
-
-    i{
-        color: $it-support-color;
-    }
+ }
+    .spacer-rule{  background-color: $white-text; }
+    i{  color: $it-support-color;  }
     background-color: $it-support-color;
     color: $white-text;
     cursor: pointer;
 }
 
+// Marketing Card
 .card-marketing:hover{
     .nav-icon-con, #btn-marketing{
         background-color: $white-text;
         color: $marketing-color;
     }
-    .spacer-rule{
-        background-color: $white-text;
-    }
-
-    i{
-        color: $marketing-color;
-    }
+    .spacer-rule{  background-color: $white-text;  }
+    i{   color: $marketing-color; }
     background-color: $marketing-color;
     color: $white-text;
     cursor: pointer;
 }
 
+// Telecoms Card
 .card-telecoms:hover{
     .nav-icon-con, #btn-telecoms{
         background-color: $white-text;
         color: $telecoms-color;
     }
-    .spacer-rule{
-        background-color: $white-text;
-    }
-    i{
-        color: $telecoms-color;
-    }
+    .spacer-rule{  background-color: $white-text; }
+    i{  color: $telecoms-color }
     background-color: $telecoms-color;
     color: $white-text;
     cursor: pointer;
 }
 
+// Web Design Card
 .card-web:hover{
     .nav-icon-con, #btn-web{
         background-color: $white-text;
-        color: $web-color-hovered;
+        color: $web-color-darker;
     }
-    .spacer-rule{
-        background-color: $white-text;
-    }
+    .spacer-rule{ background-color: $white-text;}
 
-    i{
-        color: $web-color-hovered;
-    }
-    background-color: $web-color-hovered;
+    i{ color: $web-color-darker;  }
+    background-color: $web-color-darker;
     color: $white-text;
     cursor: pointer;
 }
 
+// Security Card
 .card-security:hover{
     .nav-icon-con, #btn-security{
         background-color: $white-text;
-        color: $security-color-hovered;
+        color: $security-color-darker;
     }
 
-    i{
-        color: $security-color-hovered;
-    }
-    background-color: $security-color-hovered;
+    i{ color: $security-color-darker;  }
+    background-color: $security-color-darker;
     color: $white-text;
     cursor: pointer;
 }
 
+// Developer Training Card
 .card-schools:hover{
     .nav-icon-con, #btn-school{
         background-color: $white-text;
-        color: $web-color-hovered;
+        color: $web-color-darker;
     }
-
-    i{
-        color: $web-color-hovered;
-    }
-    background-color: $web-color-hovered;
+    i{ color: $web-color-darker; } 
+    background-color: $web-color-darker;
     color: $white-text;
     cursor: pointer;
 }
+
+// Media Queries for the card components

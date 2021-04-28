@@ -39,10 +39,37 @@
                  color:$white-text;
  
                  &:hover{
-                     background-color: $security-color-hovered;
+                     background-color: $security-color-darker;
                      cursor: pointer;
                  }
              }
          }
      }
  }
+
+ // Media Queries for the banner element
+ @media only screen and (min-width:$screen-xl-min)
+{
+    .banner-text{
+        width: 1298px;
+        
+        & > h1, p{
+            text-align: left;
+            
+        }
+        
+        & > button{
+            float: left;
+           
+        }
+        
+    }
+
+    .banner{
+        & >.banner-overlay{
+            background: linear-gradient(270deg, transparent 0%, #000);
+        }
+    }
+
+    
+}

@@ -1,30 +1,33 @@
 //colours - will be seperated into categories based on use
 $shadow-light-grey: #ccc;
 $search-border-grey: #999aa2;
+$search-box-highlight: #5bc0de;
 $white-text: #fff;
 $off-white: #ddd;
+$off-black: #121419;
 $darkest-blue: #333645;
 
 
 //Navbar colour variables
-
-$web-color: #926fb1;
-$web-color-hovered: #79539a;
+// Note: Naming conventions for the following colours are based on their use in the 
+// Nav Bar element, but they are reused throughout the project.
+$web-color: #926fb1;        
+$web-color-darker: #79539a;
 
 $it-support-color: #4183d7;
-$it-support-color-hovered: #286abd;
+$it-support-color-darker: #286abd;
 
 $telecoms-color: #d64541;
-$telecoms-color-hovered:#bc2c28;
+$telecoms-color-darker:#bc2c28;
 
 $bespoke-color: #67809f;
-$bespoke-color-hovered: #526781;
+$bespoke-color-darker: #526781;
 
 $marketing-color: #23cc71;
-$marketing-color-hovered:#25a25a;
+$marketing-color-darker:#25a25a;
 
 $security-color: #de093f;
-$security-color-hovered: #f62459;
+$security-color-darker: #f62459;
 
 
 // screen width variables
