@@ -1,10 +1,12 @@
+// ====================================================================================
+// Styling the Navigation card elements
+// ====================================================================================
 .nav-cards{
+    // internal settings for card elements
     padding-top: 30px;
     padding-bottom: 30px;
     
-    & > button:hover{
-        cursor:pointer;
-    }
+    & > button:hover{ cursor:pointer; } // Adding a pointer on hover
 
     & > .xl-row-nav , .xxl-row-nav .lg-row-nav {
         & > .card-nav{
@@ -14,23 +16,21 @@
             flex-direction: column;
             height: 300px;
             position: relative;
-            // box-shadow: 0 3px 35px rgb(0 0 0 / 10%);
             box-shadow: inset 0 0px 0px rgba($shadow-light-grey, 90%);
             text-align: center;
             border: 1px solid $shadow-light-grey;
             border-radius: 3px;
             margin: 1rem 1rem;
             
-            & >p{
-                font-size: .8125rem;
-            }
+            & >p { font-size: .8125rem; } // Setting font to match that of the main site
             & > h2{
+
                 position: relative;
                 font-size: 1.125rem;
                 padding-bottom: 17px;
                 margin: 0 0 11px;
                 font-weight: 200;
-                color: #333645;
+                color: $darkest-blue;
                 text-align: center;
                 line-height: 1.1;
                 display: block;
@@ -48,49 +48,45 @@
                 background-color: $darkest-blue;
             }
             &:hover{
-                
-                & > p, h2{
-                    color: $white-text;
-                }
-
-                & > h2::after{
-                    background-color: $white-text;
-                }
+                // Setting the text and background properties to the colours they switch between
+                & > p, h2{  color: $white-text; }
+                & > h2::after{ background-color: $white-text; }
             }
             
             & > .nav-icon-con{
-                border-radius: 50%;
+                // Setting the minimum sizes and border for the icons
                 min-width: 50px;
                 min-height: 50px;
                 max-width: 51px;
                 max-height: 51px;
+                
+                // Making circular and setting position
+                border-radius: 50%;
                 margin:0 auto 17px;
                 position:relative;
-                //text-align: center;
-                //vertical-align: middle;
                 font-weight: 600;
-                //line-height: 1.42857143;
+                // ====================================================================================
                 & > span{
                     & > span{
                         & > i{
+                            // Centering the icons inside their parent circles
                             position: absolute;
-                            top: 14px;
+                            top: 16px;
                             left: 16px;
-                            
+                            // ====================================================================================
                         }
                     }
-                    
                 }
             
             }
             
-    
             & > span{
-                //padding: 0px 30px;
                 text-align: center;
             }
     
             & > .btn-nav{
+                // Main styling for the buttons at bottom of each nav card
+                
                 min-height: 45px;
                 max-height: 45px;
                 width: 150px;
@@ -107,6 +103,7 @@
                 text-align: center;
                 cursor: pointer;
                 margin:0 auto;
+                // ====================================================================================
             }
             
         }
@@ -121,9 +118,9 @@
 .IT, #btn-IT{  background-color: $it-support-color;}                     // IT Support
 .marketing, #btn-marketing{ background-color: $marketing-color;}         // Marketing
 .telecoms, #btn-telecoms{ background-color: $telecoms-color;}            // Telecoms
-.web-design, #btn-web{ background-color: $web-color-darker;}            // Web Design
-.security, #btn-security{ background-color: $security-color-darker;}    // Security
-.schools, #btn-school{ background-color: $web-color-darker;}            // Devekoper Training
+.web-design, #btn-web{ background-color: $web-color-darker;}             // Web Design
+.security, #btn-security{ background-color: $security-color-darker;}     // Security
+.schools, #btn-school{ background-color: $web-color-darker;}             // Devekoper Training
 
 
 // Changes to card colours and internal element colours on ::hover
@@ -218,4 +215,95 @@
     cursor: pointer;
 }
 
+// ====================================================================================
 // Media Queries for the card components
+// ====================================================================================
+@media only screen and (max-width: $screen-lg-min){
+    .bespoke,.marketing,.IT,.telecoms,.security,.web-design,.schools{
+        width: 100%;
+        display:block;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (min-width: $screen-md-min) and (max-width:$screen-xl-min){
+    .lg-row-nav{
+        display: flex;
+        width: $screen-md-min;
+        justify-content: space-around;
+        margin: 0 auto;
+    }
+
+    .security,.schools,.web-design,.telecoms{
+        width: 50%;
+        display:block;
+        margin: 0 auto;
+        
+        
+    }
+    .card-security,.card-schools,.card-web,.card-telecoms{
+        width: 50%;
+        display:block;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (min-width: $screen-lg-min){
+    .xl-row-nav{
+        display:flex;
+        width: $screen-lg-min;
+        margin: 25px auto;
+        & > .card-nav{
+            @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+                width: 33.3%;
+            }  
+        }
+    }
+    .bespoke,.IT,.marketing{
+        width: 33.3%;
+        float:left;
+        display:block;
+        margin: 0 auto;   
+    }
+}
+
+@media only screen and (min-width: $screen-xl-min){ // Effects to take place on larger screen sizes
+    .nav-cards{
+        width: 1298px;
+        margin: 0 auto;
+    }
+    .xxl-row-nav{
+        display:flex;
+        flex-direction: row;
+        margin: 45px auto;
+    }
+    .lg-row-nav{
+        display:flex;
+        justify-content: space-around;
+        margin: 0 auto;
+        padding: 0 0;    
+    }
+    .card-security,.card-schools,.card-web,.card-telecoms{
+        width: 45%;
+        height: 100%;
+        display:block;
+        float:left;
+        margin: 0 auto;    
+    }
+    .security,.schools,.web-design,.telecoms{
+        width: 45%;
+        height: 100%;
+        display:block;
+        float:left;
+        margin: 0 auto;     
+    }
+
+}
+
+@-moz-document url-prefix(){
+    .card-nav{
+        & > p{
+            margin-bottom: 15px;
+        }
+    }
+}
