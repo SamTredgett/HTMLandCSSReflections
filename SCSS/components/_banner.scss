@@ -52,7 +52,7 @@
                 margin: 30px 0;   
                 // ====================================================================================
                       
-                &:hover{
+                &:hover{ // Basic changes for hovering on the button
                     background-color: $security-color-darker;
                     cursor: pointer;
                 }
@@ -67,28 +67,18 @@
 // Media Queries for the banner element
 // ====================================================================================
 
- @media only screen and (min-width:$screen-xl-min)
-{
+
+// Note: A media query for centering objects at smaller view sizes is not needed as the property
+//       is inherited from parent object.
+ @media only screen and (min-width:$screen-xl-min){ // Internal banner elements on left side at larger screen size
     .banner-text{
-        width: 1298px;
+        width: 1300px;
+        & > h1, p{ text-align: left; }
+        & > button{ float: left;  }
         
-        & > h1, p{
-            text-align: left;
-            
-        }
-        
-        & > button{
-            float: left;
-           
-        }
-        
-    }
-
-    .banner{
-        & >.banner-overlay{
-            background: linear-gradient(270deg, transparent 0%, #000);
-        }
-    }
-
-    
+    } 
 }
+
+// ====================================================================================
+// End of Media Queries for banner element
+// ====================================================================================

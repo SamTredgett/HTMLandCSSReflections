@@ -458,17 +458,13 @@
 
 @media only screen and (min-width: 1280px) {
   .banner-text {
-    width: 1298px;
+    width: 1300px;
   }
   .banner-text > h1, .banner-text p {
     text-align: left;
   }
   .banner-text > button {
     float: left;
-  }
-  .banner > .banner-overlay {
-    background: -webkit-gradient(linear, right top, left top, from(transparent), to(#000));
-    background: linear-gradient(270deg, transparent 0%, #000);
   }
 }
 
