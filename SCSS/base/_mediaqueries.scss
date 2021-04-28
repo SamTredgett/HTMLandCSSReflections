@@ -518,16 +518,12 @@
 
 @media (min-width: $screen-xl-min) {
     footer {
-
         .footer-main {
-            
-
             .footer-content {
                 width: 1296px;
                 padding: 30px 0px;
-                
                 & > div {
-                    
+
                     margin: 0 auto;
                     width: 20%;
                 }
@@ -544,8 +540,8 @@
     .button-container{
         & > a {
             & > img {
-                width: 30px;
                 height: 30px;
+                width: 30px;
             }
         }
     }
@@ -619,13 +615,20 @@
     
     
 }
+
+// General element hides/fixes
 // establishing hidden-sm class properly
 @media (max-width: $screen-lg-min){
     .hidden-sm{
         display:none!important;
     }
 }
-
+//establishing hidden-xs class properly
+@media (max-width:$screen-md-min) {
+    .hidden-xs {
+        display:none!important;
+    }
+}
 @media (max-width:$screen-lg-min ) and (min-width:440px) {
     .searchbar-mobile{ 
         display:flex;
@@ -634,14 +637,6 @@
     }
 }
 
-
-
-//establishing hidden-xs class properly
-@media (max-width:$screen-md-min) {
-    .hidden-xs {
-        display:none!important;
-    }
-}
 
 @media only screen and (min-width: $screen-xl-min){
     .header-inner, .searchbar-mobile, .banner-text, .tab-wrapper,

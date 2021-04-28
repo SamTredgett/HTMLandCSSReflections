@@ -2130,8 +2130,8 @@ body {
 
 @-moz-document url-prefix() {
   .button-container > a > img {
-    width: 30px;
     height: 30px;
+    width: 30px;
   }
 }
 
@@ -2194,6 +2194,12 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+  .hidden-xs {
+    display: none !important;
+  }
+}
+
 @media (max-width: 1009px) and (min-width: 440px) {
   .searchbar-mobile {
     display: -webkit-box;
@@ -2204,12 +2210,6 @@ body {
     -webkit-box-ordinal-group: last;
         -ms-flex-order: last;
             order: last;
-  }
-}
-
-@media (max-width: 768px) {
-  .hidden-xs {
-    display: none !important;
   }
 }
 
