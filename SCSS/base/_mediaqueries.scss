@@ -3,7 +3,6 @@
     .searchbar-lg{
         display: none;
     }
-    
     .searchbar-mobile{
         @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
             & > button{
@@ -15,11 +14,9 @@
     .header{
         margin-bottom: 30px;
     }
-
     .logo{
         max-width: 80%;
     }
-    
 }
 //hide call button and mobile search
 @media only screen and (min-width:$screen-md-min){
@@ -28,7 +25,6 @@
             display: none;
         }
     }
-
     .header{
         & > .searchbar-mobile{
             display: none;
@@ -52,7 +48,7 @@
             & > input{
                 width:200px;
                 height: 56px;
-                border: 1px solid #999aa2;
+                border: 1px solid $search-border-grey;
                 padding-left: 15px;
                 padding-right: 30px;
 
@@ -65,7 +61,7 @@
             }
             & > button{
                 position: absolute;
-                background-color: #999aa2;
+                background-color: $search-border-grey;
                 border: inherit;
                 height: 56px;
                 width: 63px;
@@ -90,7 +86,7 @@
 }
 //hide support and contact buttons
 @media (max-width:$screen-lg-min){
-    .big-beautiful-button{
+    .header-button{
         display: none;
     }
     
@@ -197,7 +193,6 @@
         display: none;
     }
 }
-
 @media only screen and (min-width:1010px){
     .navbar{
         & > .tab-wrapper{
@@ -216,8 +211,6 @@
     }
     
 }
-
-
 
 @media only screen and (min-width:$screen-xl-min){
     .navbar{
@@ -239,11 +232,10 @@
     
 }
 
-
 // //test fix for objects not disappearing at smaller resolutions
 // @media only screen and (max-width:$screen-md-min){
 //     .hidden-sm {
-//         display:none;
+//         display:none!important;
 //     }
 // }
 
@@ -334,26 +326,19 @@
     .xl-row-nav{
         display:flex;
         width: $screen-lg-min;
-        //justify-content: space-between;
         margin: 25px auto;
-        
         & > .card-nav{
             @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
                 width: 33.3%;
-            }
-            
+            }  
         }
     }
-
     .bespoke,.IT,.marketing{
         width: 33.3%;
         float:left;
         display:block;
-        margin: 0 auto;
-        
+        margin: 0 auto;   
     }
-    
-
 }
 
 @media only screen and (min-width: $screen-xl-min){
@@ -495,16 +480,11 @@
 
 @media (min-width: $screen-lg-min) {
     footer {
-
         .footer-main {
-            
-
             .footer-content {
                 width: 1010px;
-                padding: 30px 0px;
-                
-                & > div {
-                    
+                padding: 30px 0px;      
+                & > div {       
                     margin: 0 auto;
                     width: 25%;
                 }
@@ -651,7 +631,6 @@
         display:flex;
         flex-basis:auto;
         order:last;
-
     }
 }
 

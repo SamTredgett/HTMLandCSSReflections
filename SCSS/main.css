@@ -1215,26 +1215,26 @@ body {
   display: block;
 }
 
-.header > .header-inner .buttons > .big-beautiful-button {
+.header > .header-inner .buttons > .header-button {
   padding: 15px  25px 15px 10px;
   height: 56px;
   width: 130px;
 }
 
-.header > .header-inner .buttons > .big-beautiful-button > i {
+.header > .header-inner .buttons > .header-button > i {
   padding: 5px 15px;
   padding-right: 5px;
   font-size: 18px;
 }
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-  .header > .header-inner .buttons > .big-beautiful-button > i {
+  .header > .header-inner .buttons > .header-button > i {
     padding-right: 0;
   }
 }
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-  .header > .header-inner .buttons > .big-beautiful-button {
+  .header > .header-inner .buttons > .header-button {
     padding: 15px 10px 15px 0;
   }
 }
@@ -1760,7 +1760,7 @@ body {
 }
 
 @media (max-width: 1009px) {
-  .big-beautiful-button {
+  .header-button {
     display: none;
   }
 }
