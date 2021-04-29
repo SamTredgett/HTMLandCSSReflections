@@ -8,7 +8,9 @@
     <link rel="icon" href="img/favicon.ico">
     <script src="https://kit.fontawesome.com/b149441de4.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="SCSS/main.css">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous"> -->
+    <!-- using bootstrap with the hidden-small media query i've written seems to cause more problems than it solves so i'm relegating it for now -->
+    <!-- may revisit for future version to improve upon the structure of the page -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     
     <title>Netmatters | Full Service Digital Agency | Norwich, Norfolk | Netmatters</title>
@@ -16,37 +18,49 @@
 <body>      
         <header class="header">
             <div class="header-inner">
-                <a href=""><img class="logo" src="img/netmatters-logo.png" alt="Netmatters logo"></a>
-                <div class="buttons">
-                    <div class="support"><i class="fas fa-phone"></i></div>
-                    <button class="header-button support-xl"><i class="fas fa-mouse"></i>SUPPORT</button>
-                    <button class="header-button contact-xl"><i class="far fa-paper-plane"></i>CONTACT</button>
-                    <div class="searchbar searchbar-lg ">
+                <div class="container">
+                    <div class="row">
+                    <div class="col-xs-6 col-sm-6 col-md-5 col-lg-4">
+                        <div class="img-container">
+                            <a href="https://www.netmatters.co.uk" class="logo"><img  src="img/netmatters-logo.png" alt="Netmatters"></a>
+                        </div>
+                    </div>
+                    <div class="col-xs-3 col-sm-6 col-md-7 col-lg-8">
+                        <div class="buttons">
+                            <div class="support"><i class="fas fa-phone"></i></div>
+                            <button class="header-button support-xl"><i class="fas fa-mouse"></i>SUPPORT</button>
+                            <button class="header-button contact-xl"><i class="far fa-paper-plane"></i>CONTACT</button>
+                            <div class="searchbar searchbar-lg ">
+                                <form action="/action_page.php">
+                                    <input type="text" placeholder="Search.." name="search">
+                                    <button type="submit" class="mobile-sbtn" style="color:#fff;"><i class="fa fa-search"></i></button>
+                                </form>
+                            </div>
+                            <button class="hamburger hamburger--elastic" type="button">
+                                <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                                </span><br>
+                                <span class="menutext">MENU</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="searchbar searchbar-mobile hidden-lg-min hidden-small ">
                         <form action="/action_page.php">
                             <input type="text" placeholder="Search.." name="search">
-                            <button type="submit" class="mobile-sbtn" style="color:#fff;"><i class="fa fa-search"></i></button>
+                            <button type="submit" class="mobile-sbtn" style="color:#333645; font-size: 20px; line-height: 1;"><i class="fa fa-search"></i></button>
                         </form>
                     </div>
-                    <button class="hamburger hamburger--elastic" type="button">
-                        <span class="hamburger-box">
-                        <span class="hamburger-inner"></span>
-                        </span><br>
-                        <span class="menutext">MENU</span>
-                    </button>
                 </div>
-                <div class="searchbar searchbar-mobile hidden-lg-min hidden-sm">
-                    <form action="/action_page.php">
-                        <input type="text" placeholder="Search.." name="search">
-                        <button type="submit" class="mobile-sbtn" style="color:#333645; font-size: 20px; line-height: 1;"><i class="fa fa-search"></i></button>
-                    </form>
                 </div>
+            </div>
         </header>
         <!-- end of header element -->
 
         <!-- nav bar -->
-        <div class="navbar hidden-sm">
+        <div class="navigation-bar hidden-small">
             <div class="start-tab bar-child"></div>
-            <div class="tab-wrapper">
+
+            <div class="tab-wrapper"> 
                 
                 <div class="bar-child tab web-tab">
                     <div class="icon-tab">

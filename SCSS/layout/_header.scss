@@ -1,19 +1,24 @@
 .logo{
     display:block;
     max-width: 100%;
-    margin-top: 15px;
+    // margin-top: 15px;
 }
 .header{
     padding-top: 5px;
     padding-bottom: 5px;
     margin: 0 15px;
     & > .header-inner{
+        padding:20px;
         display: flex;
         height:35px;
         vertical-align: middle;
         flex-direction: row;
         margin: 30px auto;
         position: relative;
+
+        & > .img-container {
+            //
+        }
         .buttons{
             display:flex;
             justify-content: space-around;
@@ -156,7 +161,7 @@
         margin-bottom: 30px;
     }
     .logo{
-        max-width: 80%;
+        max-width: 100%;
     }
 }
 //hide call button and mobile search

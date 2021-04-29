@@ -2,7 +2,7 @@
  
 //test fix for objects not disappearing at smaller resolutions
 @media only screen and (max-width:$screen-md-min) {
-    .hidden-sm {
+    .hidden-small {
         display:none!important;
     }
     .hidden-xs {
@@ -11,7 +11,7 @@
 }
 // Hides objects at screen sizes smaller than 1009px (Value of $screen-lg-min)
 @media (max-width: $screen-lg-min) {
-    .hidden-sm{
+    .hidden-small{
         display:none!important;
     }
 }
