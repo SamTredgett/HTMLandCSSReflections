@@ -1,8 +1,13 @@
+// ====================================================================================
+// Main Styling for the culture element
+// ====================================================================================
 .culture-back{
+    // Positioning
     background-repeat: no-repeat;
     background-size: cover;
     padding: 15px 15px;
     text-align: left;
+    // ====================================================================================
     & > p,h2{
         color:$white-text;
         padding: 15px 15px;
@@ -43,25 +48,29 @@
         }
     }
 }
-.culture{
-    background-color: $darkest-blue;
-}
+.culture{ background-color: $darkest-blue;}
+// ====================================================================================
+// End of Styling for the culture segment
+// ====================================================================================
 
+// ====================================================================================
+
+// ====================================================================================
 // Media Queries for the culture component
-
+// ====================================================================================
 @media only screen and (min-width:$screen-lg-min){
     .culture{
+        background-color: $darkest-blue;
         background-image: url("../img/netmatters-transp.png");
         background-repeat: no-repeat;
-        background-color: $darkest-blue;
         background-position: right;
     }
     .culture-back{
         width: 1298px;
         margin: 0 auto;
-        background-color: rgba(0,0,0,0);
-        & > p,h1{
-            width: 50%;
-        }
+        & > p,h1{  width: 50%;}
     }
 }
+// ====================================================================================
+// End of Media Queries for the culture segement
+// ====================================================================================

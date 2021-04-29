@@ -16,12 +16,15 @@
         margin: 30px auto;
         position: relative;
 
-        & > .img-container {
-            //
-        }
         .buttons{
-            display:flex;
-            justify-content: space-around;
+            // display:flex;
+            // justify-content: space-around;
+            margin-left:20px;
+
+            & > .pull-left {
+                float:left;
+                float:left!important;
+            }
             & > .support, .hamburger{
                 position:absolute;
             }

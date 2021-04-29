@@ -21,7 +21,7 @@
             border: 1px solid $shadow-light-grey;
             border-radius: 3px;
             margin: 1rem 1rem;
-            
+            // ====================================================================================
             & >p { font-size: .8125rem; } // Setting font to match that of the main site
             & > h2{
 
@@ -79,14 +79,11 @@
                 }
             
             }
-            
-            & > span{
-                text-align: center;
-            }
+            // Centering text
+            & > span{  text-align: center;  }
     
             & > .btn-nav{
-                // Main styling for the buttons at bottom of each nav card
-                
+                // Main styling for the buttons at bottom of each nav card  
                 min-height: 45px;
                 max-height: 45px;
                 width: 150px;
@@ -104,12 +101,10 @@
                 cursor: pointer;
                 margin:0 auto;
                 // ====================================================================================
-            }
-            
+            } 
         }
     }
 }
-
 
 // colour settings for the card interactions via hover etc. to invert colours 
 
@@ -214,6 +209,11 @@
     color: $white-text;
     cursor: pointer;
 }
+// ====================================================================================
+// End of Styling for the navigation card componenets
+// ====================================================================================
+
+
 
 // ====================================================================================
 // Media Queries for the card components
@@ -233,13 +233,10 @@
         justify-content: space-around;
         margin: 0 auto;
     }
-
     .security,.schools,.web-design,.telecoms{
         width: 50%;
         display:block;
         margin: 0 auto;
-        
-        
     }
     .card-security,.card-schools,.card-web,.card-telecoms{
         width: 50%;
@@ -254,9 +251,7 @@
         width: $screen-lg-min;
         margin: 25px auto;
         & > .card-nav{
-            @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-                width: 33.3%;
-            }  
+            @media screen and (-ms-high-contrast: active) , (-ms-high-contrast: none) {  width: 33.3%; }  
         }
     }
     .bespoke,.IT,.marketing{
@@ -267,7 +262,7 @@
     }
 }
 
-@media only screen and (min-width: $screen-xl-min){ // Effects to take place on larger screen sizes
+@media only screen and (min-width: $screen-xl-min){ 
     .nav-cards{
         width: 1298px;
         margin: 0 auto;
@@ -299,11 +294,11 @@
     }
 
 }
-
 @-moz-document url-prefix(){
     .card-nav{
-        & > p{
-            margin-bottom: 15px;
-        }
+        & > p{ margin-bottom: 15px; }
     }
 }
+// ====================================================================================
+// End of Media Queries for the card elements
+// ====================================================================================

@@ -1,32 +1,39 @@
+// ====================================================================================
+//  Styling for the Hamburger menu component
+// ====================================================================================
+
 // Individual Variable settings unique to the hamburger, do not need to be stored in abstracts/_variables.scss as they're not re-used elsewhere.
 
-$hamburger-layer-width         : 32px !default;
-$hamburger-layer-height        : 3px !default;
-$hamburger-layer-spacing       : 4px !default;
-$hamburger-layer-color         : $white-text !default;
-$hamburger-layer-border-radius : 0px !default;
-$hamburger-hover-opacity       : 1 !default;
-$hamburger-active-layer-color  : $hamburger-layer-color !default;
-$hamburger-active-hover-opacity: $hamburger-hover-opacity !default;
-$hamburger-hover-use-filter   : false !default;
-$hamburger-hover-filter       : opacity(100%) !default;
-$hamburger-active-hover-filter: $hamburger-hover-filter !default;
+// Hamburger layer settings
+$hamburger-layer-color         : $white-text;
+$hamburger-layer-border-radius : 0px;
+$hamburger-layer-width         : 32px;
+$hamburger-layer-height        : 3px;
+$hamburger-layer-spacing       : 4px;
 
-$hamburger-types: (
-  elastic,
-) !default;
+// Hamburger hover settings
+$hamburger-hover-opacity       : 1;
+$hamburger-hover-use-filter   : false;
+$hamburger-hover-filter       : opacity(100%);
 
+// Hamburger active settings 
+$hamburger-active-hover-filter:  $hamburger-hover-filter;
+$hamburger-active-layer-color  : $hamburger-layer-color;
+$hamburger-active-hover-opacity: $hamburger-hover-opacity;
+$hamburger-types: (elastic);
 
 .hamburger {
+    // Layout
     padding: 8px 15px;
     display: inline-block;
     cursor: pointer;
   
+    // Animation properties
     transition-property: opacity, filter;
-    transition-duration: 0.15s;
+    transition-duration: 0.2s;
     transition-timing-function: linear;
   
-    // Normalize (<button>)
+    // Normalised 
     font: inherit;
     color: inherit;
     text-transform: none;
@@ -34,41 +41,30 @@ $hamburger-types: (
     border: 0;
     margin: 0;
     overflow: visible;
-  
+
+    // Hover effect
     &:hover {
-      @if $hamburger-hover-use-filter == true {
-        filter: $hamburger-hover-filter;
-      }
-      @else {
-        opacity: $hamburger-hover-opacity;
-      }
+      @if $hamburger-hover-use-filter == true {   filter: $hamburger-hover-filter;   }
+      @else {                                     opacity: $hamburger-hover-opacity; }
     }
-  
+    // Click effect
     &.is-active {
       &:hover {
-        @if $hamburger-hover-use-filter == true {
-          filter: $hamburger-active-hover-filter;
-        }
-        @else {
-          opacity: $hamburger-active-hover-opacity;
-        }
+        @if $hamburger-hover-use-filter == true {  filter: $hamburger-active-hover-filter;   }
+        @else {                                    opacity: $hamburger-active-hover-opacity; }
       }
   
       .hamburger-inner,
       .hamburger-inner::before,
-      .hamburger-inner::after {
-        background-color: $hamburger-active-layer-color;
-      }
+      .hamburger-inner::after {   background-color: $hamburger-active-layer-color;  }
     }
   }
-  
   .hamburger-box {
     width: $hamburger-layer-width;
     height: $hamburger-layer-height * 3 + $hamburger-layer-spacing * 2;
     display: inline-block;
     position: relative;
   }
-  
   .hamburger-inner {
     display: block;
     top: 50%;
@@ -77,11 +73,14 @@ $hamburger-types: (
     &,
     &::before,
     &::after {
+      // Layout
       width: $hamburger-layer-width;
       height: $hamburger-layer-height;
       background-color: $hamburger-layer-color;
       border-radius: $hamburger-layer-border-radius;
       position: absolute;
+
+      // Transition settings
       transition-property: transform;
       transition-duration: 0.15s;
       transition-timing-function: ease;
@@ -92,59 +91,15 @@ $hamburger-types: (
       content: "";
       display: block;
     }
-  
-    &::before {
-      top: ($hamburger-layer-spacing + $hamburger-layer-height) * -1;
-    }
-  
-    &::after {
-      bottom: ($hamburger-layer-spacing + $hamburger-layer-height) * -1;
-    }
+    &::before { top: ($hamburger-layer-spacing + $hamburger-layer-height) * -1;   } 
+    &::after { bottom: ($hamburger-layer-spacing + $hamburger-layer-height) * -1; }
   }
 
-  @if index($hamburger-types, elastic) {
-    /*
-     * Elastic
-     */
-    .hamburger--elastic {
-      .hamburger-inner {
-        top: $hamburger-layer-height / 2;
-        transition-duration: 0.275s;
-        transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  
-        &::before {
-          top: $hamburger-layer-height + $hamburger-layer-spacing;
-          transition: opacity 0.125s 0.275s ease;
-        }
-  
-        &::after {
-          top: ($hamburger-layer-height * 2) + ($hamburger-layer-spacing * 2);
-          transition: transform 0.275s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-        }
-      }
-  
-      &.is-active {
-        .hamburger-inner {
-          $y-offset: $hamburger-layer-spacing + $hamburger-layer-height;
-  
-          transform: translate3d(0, $y-offset, 0) rotate(135deg);
-          transition-delay: 0.075s;
-  
-          &::before {
-            transition-delay: 0s;
-            opacity: 0;
-          }
-  
-          &::after {
-            transform: translate3d(0, $y-offset * -2, 0) rotate(-270deg);
-            transition-delay: 0.075s;
-          }
-        }
-      }
-    }
-  }
+// ====================================================================================
+// End of styling for the hamburger component
+// ====================================================================================
 
-
-  // Media Queries for the hamburger component
-
+// ====================================================================================
+// Media Queries for the hamburger component
+// ====================================================================================
   

@@ -20,7 +20,9 @@
 // Universal display queries
 // ====================================================================================
 
-//Mobile phone viewing
+// These queries all mimic the same structure, just differing invariable and margin use
+
+// Adjustments for viewing at mobile phone sizes
 @media only screen and (max-width: 443px){
     .header-inner, .searchbar-mobile, .banner-text,
     .nav-cards, .culture-back, .news-header-section,
@@ -29,7 +31,8 @@
         margin: 0 auto;
     }
 }
-// Tablet size viewing
+// ====================================================================================
+// Adjustments for viewing on medium sized screens/tablets
 @media only screen and (min-width: $screen-md-min){
     .header-inner, .searchbar-mobile, .banner-text,
     .nav-cards, .culture-back, .news-header-section,
@@ -38,7 +41,8 @@
         margin: 0 auto;
     }
 }
-//small laptops
+// ====================================================================================
+// Adjustments for viewing on Smaller laptops
 @media only screen and (min-width: 1010px){
     .header-inner, .searchbar-mobile, .banner-text, .tab-wrapper,
     .lg-row-nav, .nav-cards, .culture-back, .news-header-section,
@@ -47,7 +51,7 @@
         margin: 0 auto;
     }
 }
-
+// Adjustments for viewing at normal desktop resolutions
 @media only screen and (min-width: $screen-xl-min){
     .header-inner, .searchbar-mobile, .banner-text, .tab-wrapper,
     .xl-row-nav, .xxl-row-nav, .nav-cards,
@@ -57,35 +61,4 @@
         margin: 0 auto;
     }
 }
-
-//cross browser fixes
-//header
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-    .menutext{
-        margin: 0 0;
-        padding: 0 0;
-        
-        position: absolute;
-        top: 25px;
-        right: 12px;
-    }
-    .hamburger-inner{
-        margin-bottom: 20px;
-        margin-top: -8px;
-    }
-}
-
-@-moz-document url-prefix(){
-    .menutext{
-        margin: 0 0;
-        padding: 0 0;
-        
-        position: absolute;
-        top: 25px;
-        right: 12px;
-    }
-    .hamburger-inner{
-        margin-bottom: 20px;
-        margin-top: -8px;
-    }
-}
+// ====================================================================================
