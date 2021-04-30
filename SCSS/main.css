@@ -457,6 +457,7 @@
 }
 
 .nav-cards > .xl-row-nav > .card-nav > .btn-nav, .nav-cards .xxl-row-nav .lg-row-nav > .card-nav > .btn-nav {
+  color: #ffffff;
   min-height: 45px;
   max-height: 45px;
   width: 150px;
@@ -464,14 +465,13 @@
   font-size: 1.063rem;
   white-space: normal;
   border: none;
-  color: #ffffff;
   border-radius: 3px;
   padding: 5px 15px;
-  display: block;
-  margin-bottom: 0;
   font-weight: 400;
   text-align: center;
   cursor: pointer;
+  display: block;
+  margin-bottom: 0;
   margin: 0 auto;
 }
 
@@ -1112,19 +1112,19 @@
 .companies > .company > .tooltiptext {
   background-color: #333645;
   color: #ffffff;
+  line-height: 30px;
   visibility: hidden;
   min-width: 260px;
   height: auto;
   text-align: center;
   padding: 15px 15px;
+  font-size: 1.0rem;
+  margin-left: -60px;
+  margin-bottom: 70px;
   position: absolute;
   z-index: 5;
   bottom: 70%;
   left: 25%;
-  line-height: 30px;
-  margin-left: -60px;
-  margin-bottom: 70px;
-  font-size: 1.0rem;
 }
 
 .companies > .company > .tooltiptext > h3 {
@@ -1179,7 +1179,6 @@
 }
 
 .sign-up-form {
-  height: 100%;
   background-color: #dddddd;
   color: #333645;
   display: -webkit-box;
@@ -1189,10 +1188,11 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 30px 30px;
-  margin: 0 30px;
   position: relative;
   z-index: 1;
+  height: 100%;
+  padding: 30px 30px;
+  margin: 0 30px;
 }
 
 .sign-up-form > .form {
@@ -1218,19 +1218,19 @@
 }
 
 .sign-up-form > .form > .form-box > .form-group > .field {
-  margin-top: 15px;
-  margin-bottom: 15px;
-  padding: 5px 15px;
   border: 1px solid #ccc;
-  border-radius: 2px;
   -webkit-box-shadow: inset 0 1px 1px #dddddd;
           box-shadow: inset 0 1px 1px #dddddd;
   -webkit-transition: border-color .3s ease-in-out, -webkit-box-shadow .15s ease-in-out;
   transition: border-color .3s ease-in-out, -webkit-box-shadow .15s ease-in-out;
   transition: border-color .3s ease-in-out, box-shadow .15s ease-in-out;
   transition: border-color .3s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+  padding: 5px 15px;
+  border-radius: 2px;
   height: 45px;
   width: 100%;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .sign-up-form > .form > .form-box > .form-group > .field:focus {
@@ -1255,15 +1255,15 @@
 }
 
 .sign-up-form > .form > .checkbox > .fakebox-IE {
-  position: absolute;
-  top: 5px;
-  left: 0px;
-  z-index: -1;
   border: 3px solid #333645;
   height: 30px;
   width: 30px;
   border-radius: 3px;
   display: none;
+  position: absolute;
+  top: 5px;
+  left: 0px;
+  z-index: -1;
 }
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
@@ -1311,9 +1311,9 @@
   border: 3px solid #333645;
   height: 30px;
   min-width: 30px;
+  border-radius: 3px;
   margin-top: 5px;
   margin-right: 15px;
-  border-radius: 3px;
   display: block;
 }
 
@@ -1327,11 +1327,11 @@
   border-radius: 3px;
   border: none;
   height: auto;
-  margin-bottom: 10px;
-  margin-top: 20px;
   padding: 10px 15px;
   font-size: 1.063rem;
   font-weight: 400;
+  margin-bottom: 10px;
+  margin-top: 20px;
 }
 
 .sign-up-form > .form > button:hover {
@@ -1407,21 +1407,26 @@ body {
 }
 
 .header > .header-inner {
+  height: 35px;
   padding: 20px;
+  margin: 30px auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 35px;
   vertical-align: middle;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin: 30px auto;
   position: relative;
 }
 
 .header > .header-inner .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   margin-left: 20px;
 }
 
@@ -1448,13 +1453,13 @@ body {
 }
 
 .header > .header-inner .buttons > .support::after {
+  background-color: #000;
+  width: 30px;
+  height: 3px;
   content: "";
   position: absolute;
   top: 15px;
   left: -25px;
-  width: 30px;
-  height: 3px;
-  background-color: #000;
   display: none;
 }
 
@@ -1505,6 +1510,7 @@ body {
 .header > .header-inner .buttons > .hamburger {
   background-color: #333645;
   color: #ffffff;
+  padding: 10px 12px;
   margin-bottom: 10px;
   border-radius: 3px;
   font-size: 0.1rem;
@@ -1512,7 +1518,6 @@ body {
   display: block;
   top: 15px;
   right: 0px;
-  padding: 10px 12px;
 }
 
 .header > .header-inner .buttons > .hamburger > .menutext {
@@ -1534,19 +1539,19 @@ body {
 }
 
 .header > .searchbar > form > input[type=text] {
-  padding: 6px;
-  margin-top: 8px;
-  font-size: 17px;
+  color: #666;
   border-top: 2px solid #ccc;
   border-left: 2px solid #ccc;
   border-bottom: 2px solid #ccc;
-  border-right: none;
   background-color: rgba(0, 0, 0, 0.1);
-  border-top-left-radius: 2px;
-  border-bottom-left-radius: 2px;
   -webkit-box-shadow: inset 0 0px 0px #cccccc;
           box-shadow: inset 0 0px 0px #cccccc;
-  color: #666;
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border-right: none;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
   height: 47px;
   width: 1200px;
   position: relative;
@@ -1563,10 +1568,6 @@ body {
 }
 
 .header > .searchbar > form > button {
-  padding: 12px 10px;
-  margin-top: 8px;
-  margin-right: 0px;
-  min-width: 50px;
   background-color: rgba(0, 0, 0, 0.1);
   border-top: 2px solid #ccc;
   border-right: 2px solid #ccc;
@@ -1574,6 +1575,10 @@ body {
   border-left: none;
   border-top-right-radius: 2px;
   border-bottom-right-radius: 2px;
+  padding: 12px 10px;
+  margin-top: 8px;
+  margin-right: 0px;
+  min-width: 50px;
   font-size: 17px;
   cursor: pointer;
   height: 47px;
@@ -1630,11 +1635,11 @@ body {
     position: relative;
   }
   .searchbar-lg > form > input {
-    width: 200px;
-    height: 56px;
     border: 1px solid #999aa2;
     padding-left: 15px;
     padding-right: 30px;
+    width: 200px;
+    height: 56px;
   }
   .searchbar-lg > form > input:focus {
     border-color: #5bc0de;
@@ -1642,17 +1647,17 @@ body {
             box-shadow: 0 0 8px #5bc0de;
   }
   .searchbar-lg > form > button {
-    position: absolute;
     background-color: #999aa2;
     border: inherit;
     height: 56px;
     width: 63px;
+    padding: 7px 20px 3px;
     border-radius: 3px;
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
+    position: absolute;
     top: 0px;
     right: -40px;
-    padding: 7px 20px 3px;
   }
   .searchbar-lg > form > button > i {
     font-size: 20px;
@@ -1686,7 +1691,10 @@ body {
     right: -20px;
     top: 0px;
   }
-  .support-xl {
+  .support-xl, .contact-xl {
+    color: #ffffff;
+    border: none;
+    border-radius: 3px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1696,28 +1704,13 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    border: none;
-    border-radius: 3px;
-    color: #ffffff;
     position: absolute;
     top: 15px;
+  }
+  .support-xl {
     right: 350px;
   }
   .contact-xl {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    border: none;
-    border-radius: 3px;
-    color: #ffffff;
-    position: absolute;
-    top: 15px;
     right: 200px;
   }
   .header-inner {

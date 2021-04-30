@@ -1,3 +1,6 @@
+// ====================================================================================
+// Styling for the heading elements of the page
+// ====================================================================================
 .logo{
     display:block;
     max-width: 100%;
@@ -8,26 +11,27 @@
     padding-bottom: 5px;
     margin: 0 15px;
     & > .header-inner{
-        padding:20px;
-        display: flex;
+        // Internal Properties
         height:35px;
+        padding:20px;   
+        margin: 30px auto;        
+        
+        // Positioning
+        display: flex;
         vertical-align: middle;
         flex-direction: row;
-        margin: 30px auto;
         position: relative;
-
+        // ====================================================================================
         .buttons{
-            // display:flex;
-            // justify-content: space-around;
+            display:flex;
+            justify-content: space-around;
             margin-left:20px;
-
+            // ====================================================================================
             & > .pull-left {
                 float:left;
                 float:left!important;
             }
-            & > .support, .hamburger{
-                position:absolute;
-            }
+            & > .support, .hamburger{  position:absolute; }
             & > .support{
                 display: block;
                 top: 45px;
@@ -38,18 +42,22 @@
                     transform: scale(1.75);          
                 }
                 &::after{
-                    content: "";
+                    // Colours
+                    background-color: #000;
+                    // Internal Properties
+                    width: 30px;
+                    height: 3px;
+                    content: "";                    
+                    // Positioning
                     position: absolute;
                     top: 15px;
                     left: -25px;
-                    width: 30px;
-                    height: 3px;
-                    background-color: #000;
-                    display: none;
+                    display: none;                   
+                    // ====================================================================================
                 }
                 &:hover{
                     &::after{ display:block; }
-                }
+                }                   
             }
             & > .header-button{
                 padding: 15px  25px 15px 10px;
@@ -58,14 +66,10 @@
                 & > i{
                     padding: 5px 15px;
                     padding-right: 5px;
-                    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-                        padding-right: 0;
-                    }
+                    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  padding-right: 0; }
                     font-size: 18px;
                 }
-                @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-                    padding: 15px 10px 15px 0;
-                }   
+                @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) { padding: 15px 10px 15px 0; }   
             }       
             & > .support-xl{
                 background-color: $it-support-color;
@@ -73,27 +77,31 @@
             }            
             & > .contact-xl{
                 background-color: $search-border-grey;
-                &:hover{ background-color: #84858f;}
+                &:hover{ background-color: #84858f; }
             }
             & > .hamburger{
+                // Colours
                 background-color: $darkest-blue;
                 color: $white-text;
-                margin-bottom: 10px;
+
+                // Internal Properties
+                padding: 10px 12px;
+                 margin-bottom: 10px;
                 border-radius: 3px;
                 font-size: 0.1rem;
-                height: 56px;
+                height: 56px; 
+
+                // Positioning
                 display: block;
                 top: 15px;
                 right: 0px;
-                padding: 10px 12px;
+                // ====================================================================================
                 & > .menutext{
                     font-size: 0.75rem;
                     line-height: 1.6rem;
                     margin-top: 5px;
                 }
-                &:hover{
-                    background-color: #22242e;
-                }
+                &:hover{ background-color: #22242e; }
             }
         }
     }
@@ -102,40 +110,51 @@
             display: flex;
             flex-wrap: nowrap;
             & > input[type=text]{
-                padding: 6px;
-                margin-top: 8px;
-                font-size: 17px;
+                // Colours and effects
+                color: #666;
                 border-top: 2px solid $shadow-light-grey;
                 border-left: 2px solid $shadow-light-grey;
                 border-bottom: 2px solid $shadow-light-grey;
-                border-right: none;
                 background-color: rgba(0,0,0,.1); 
+                box-shadow: inset 0 0px 0px rgba($shadow-light-grey, 90%);
+
+                // Internal Properties + Spacing
+                padding: 6px;
+                margin-top: 8px;
+                font-size: 17px;
+                border-right: none;
                 border-top-left-radius: 2px;
                 border-bottom-left-radius: 2px;
-                box-shadow: inset 0 0px 0px rgba($shadow-light-grey, 90%);
-                color: #666;
                 height: 47px;
                 width: 1200px;
+
+                // Positioning
                 position:relative;
                 &:focus{
                     box-shadow: inset 0 0px 0px rgba($shadow-light-grey, 90%);
-                    & ~ .mobile-sbtn{
-                        box-shadow: inset 0 0px 0px rgba($shadow-light-grey, 90%);
-                    }
+                    & ~ .mobile-sbtn{ box-shadow: inset 0 0px 0px rgba($shadow-light-grey, 90%);}
                 }
             }     
             & > button{
-                padding: 12px 10px;
-                margin-top: 8px;
-                margin-right: 0px;
-                min-width: 50px;
+                // Colour settings
                 background-color: rgba(0,0,0,.1);
+
+
+                // Border Settings
                 border-top: 2px solid $shadow-light-grey;
                 border-right: 2px solid $shadow-light-grey;
                 border-bottom: 2px solid $shadow-light-grey;
                 border-left: none;
                 border-top-right-radius: 2px;
                 border-bottom-right-radius: 2px;
+
+                // Internal Alignments
+                padding: 12px 10px;
+                margin-top: 8px;
+                margin-right: 0px;
+                min-width: 50px;
+
+                // Other
                 font-size: 17px;
                 cursor: pointer;
                 height: 47px;
@@ -144,9 +163,14 @@
         } 
     }
 }
+// ====================================================================================
+// End of Styling for the header Section
+// ====================================================================================
 
+
+// ====================================================================================
 // Media Queries for the header section
-
+// ====================================================================================
 // hides large search bar at smaller resolution
 @media only screen and (max-width:$screen-md-min){
     .searchbar-lg{
@@ -160,12 +184,8 @@
         }
         margin: 0 auto;
     }
-    .header{
-        margin-bottom: 30px;
-    }
-    .logo{
-        max-width: 100%;
-    }
+    .header{  margin-bottom: 30px;    }
+    .logo  {    max-width: 100%;      }
 }
 //hide call button and mobile search
 @media only screen and (min-width:$screen-md-min){
@@ -183,9 +203,8 @@
         }
         margin-bottom: 30px;
     }
-        
 }
-//show desktop/tablet search bar
+// Show the larger search bar on tablet view size
 @media only screen and (min-width:$screen-md-min){
     .searchbar-lg{
         position:absolute;
@@ -195,113 +214,92 @@
         & > form{
             position:relative;
             & > input{
-                width:200px;
-                height: 56px;
+                // Colours
                 border: 1px solid $search-border-grey;
+                // Internal Properties
                 padding-left: 15px;
                 padding-right: 30px;
-
-                &:focus{
-                    
+                width:200px;
+                height: 56px;
+                // ====================================================================================
+                &:focus{ 
                     border-color: $search-box-highlight;
-                    box-shadow: 0 0 8px rgba($search-box-highlight , 60%);
-                    
-                }
+                    box-shadow: 0 0 8px rgba($search-box-highlight , 60%); }
             }
             & > button{
-                position: absolute;
+                // Colours
                 background-color: $search-border-grey;
+                // Internal Properties
                 border: inherit;
                 height: 56px;
                 width: 63px;
+                padding: 7px 20px 3px;
                 border-radius: 3px;
                 border-top-left-radius: 0px;
                 border-bottom-left-radius: 0px;
+                // Positioning
+                position: absolute;
                 top:0px;
                 right: -40px;
-                padding: 7px 20px 3px;
-                & > i {
-                    font-size: 20px;
-                    
-                }
-                &:hover{
-                    background-color: #84858f;
-                }
+                // ====================================================================================
+                & > i  {  font-size: 20px;              }
+                &:hover{  background-color: #84858f;  }
                 
             }
         }
         
     }
 }
-//hide support and contact buttons
+
+// Hide the header buttons at lower resolutions
 @media (max-width:$screen-lg-min){
-    .header-button{
-        display: none;
-    }
-    
+    .header-button{  display: none;}  
 }
-
+// Fix media query in case the above doesn't compile using: !important
 @media (min-width: $screen-lg-min) {
-    .hidden-lg-min {
-        display:none!important;
-    }
-
+    .hidden-lg-min { display:none!important; }
 }
 
-//show contact buttons
+// Contact buttons appear at md/lg resolution and the searchbar disappears
 @media only screen and (min-width:$screen-lg-min){
-    //hide tablet/desktop searchbar
-    
-
+    // hide tablet/desktop searchbar
     .searchbar-lg{
         & > form{
             border:none;
-            & > input{
-                display:none;
-                
-            }
+            & > input{display:none;  }
             & > button{
                 border-radius: 3px;
                 right: -20px;
                 top:0px;
             }
         }
-        
     }
-
-    .support-xl{
+    .support-xl, .contact-xl{
+        // Colours
+        color:$white-text;
+        // Internal Properties
+        border:none;
+        border-radius:3px;
+        // Positioning
         display:flex;
         justify-content: space-around;
         flex-direction: row;
-        border:none;
-        border-radius:3px;
-        color:$white-text;
         position: absolute;
         top:15px;
+        // ====================================================================================
+    }
+    .support-xl{
         right: 350px;
-        
     }
     .contact-xl{
-        display:flex;
-        justify-content: space-around;
-        flex-direction: row;
-        border:none;
-        border-radius:3px;
-        color:$white-text;
-        position: absolute;
-        top:15px;
         right: 200px;
         
     }
-
     .header-inner{
         width:1010px;
         margin: 0 auto;
     }
-
 }
-
-
 @media only screen and (min-width:$screen-xl-min){  
     .header-inner{
         width:1298px;
@@ -311,8 +309,7 @@
         & > form{   
             & > input{
                 display:block;
-                border: 1px solid $search-border-grey;
-                
+                border: 1px solid $search-border-grey;    
             }
             & > button{
                 border-top-left-radius: 0px;
@@ -320,20 +317,12 @@
                 right:-40px;
             }
         }
-        
     }
     .support-xl{
         right: 530px;
-        & > fa-mouse {
-            margin-right:20px;
-        }
-        
+        & > fa-mouse { margin-right:20px; }  
     }
-
-    .contact-xl{
-        right: 380px;
-       
-    }
+    .contact-xl{  right: 380px;}
 }
 @media (max-width:$screen-lg-min ) and (min-width:440px) {
     .searchbar-mobile{ 
@@ -342,3 +331,6 @@
         order:last;
     }
 }
+// ====================================================================================
+// End of Media Queries for the header section 
+// ====================================================================================

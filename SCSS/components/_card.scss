@@ -83,7 +83,10 @@
             & > span{  text-align: center;  }
     
             & > .btn-nav{
-                // Main styling for the buttons at bottom of each nav card  
+                // Colours
+                color: $white-text;                
+
+                // Internal Properties
                 min-height: 45px;
                 max-height: 45px;
                 width: 150px;
@@ -91,14 +94,15 @@
                 font-size: 1.063rem;
                 white-space: normal;
                 border:none;
-                color: $white-text;
                 border-radius: 3px;
                 padding: 5px 15px;
-                display: block;
-                margin-bottom: 0;
                 font-weight: 400;
                 text-align: center;
                 cursor: pointer;
+
+                // Positioning
+                display: block;
+                margin-bottom: 0;
                 margin:0 auto;
                 // ====================================================================================
             } 
@@ -250,7 +254,7 @@
         display:flex;
         width: $screen-lg-min;
         margin: 25px auto;
-        
+
         & > .card-nav{
             @media screen and (-ms-high-contrast: active) , (-ms-high-contrast: none) {  width: 33.3%; }  
         }

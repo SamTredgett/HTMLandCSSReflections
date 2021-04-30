@@ -21,6 +21,8 @@
         }      
     }
 }
+
+
 .news-section{
     box-shadow: inset 0 0px 0px rgba($shadow-light-grey, 90%);
     .news-cards{
@@ -81,9 +83,7 @@
                     margin-bottom: 30px;
                     font-size: .8125rem;
                 }
-                & > h4{
-                    color: #000;
-                }   
+                & > h4{ color: #000; }   
                 & > .heading-link{
                     color: $web-color;
                     text-decoration: none;
@@ -140,12 +140,10 @@
                         }                               
                         & > .avatar, .post-info{
                             display: inline-block;
-                            vertical-align: middle;
-                                                           
+                            vertical-align: middle;                         
                             & > .minilogo{
                                 height: auto;
-                                width: 47px;
-                                                           
+                                width: 47px;                        
                             }
                         }      
                         & > .post-info{
@@ -154,15 +152,9 @@
                             line-height: 20px;
                             height:auto;
                             font-size: .875rem;
-                            & > p{
-                                color: #666;
-                            }
+                            & > p   { color: #666;      }
                         }
-                        & > .avatar{
-                            margin-top: 15px;
-                                 
-                                               
-                        }
+                        & > .avatar { margin-top: 15px;   }
                     }
                 }
             }
@@ -174,30 +166,26 @@
     &-img{ border-radius: 50%;  }
 }
 // ====================================================================================
+//  End of styling for the news components
+// ====================================================================================
+
+// ====================================================================================
 // Media Queries for the news components
 // ====================================================================================
 @media only screen and (min-width: $screen-md-min){
     .news-cards{
         display: flex;
         justify-content: space-between;
-        & > .card:last-of-type{
-            display: none;
-        }
+        & > .card:last-of-type{  display: none; }
     }
-
-    .card-news{
-        padding: 0 0px; 
-    }
-
+    .card-news{  padding: 0 0px;  }
 }
 
 @media only screen and (min-width: $screen-xl-min){
     .news-cards{
         width: 1298px;
         margin: 0 auto;
-        & > .card:last-of-type{
-            display: block;
-        }
+        & > .card:last-of-type{ display: block; }
     }
     .news-image:hover{   
         & > .img-overlay{
@@ -212,3 +200,6 @@
         } 
     }
 }
+// ====================================================================================
+// End of media queries for the news components
+// ====================================================================================
