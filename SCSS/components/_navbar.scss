@@ -49,7 +49,7 @@
                     }
                 }   
             }
-            & > .dd-background{
+            & > .drop-down-wrapper{
                 display: none;
                 padding: 22px 0px;
                 z-index: 10;
@@ -107,13 +107,12 @@
                         background-color:  $web-color-darker;
                     }
                 }
-                & > .dd-background{
+                & > .drop-down-wrapper{
                     display: flex;
                     background-color:  $web-color-darker;
                 }
             }
         }
-    
         & > .IT-tab{
             &:hover{
                 background-color: $it-support-color;
@@ -131,13 +130,12 @@
                         background-color: $it-support-color-darker;
                     }
                 }
-                & > .dd-background{
+                & > .drop-down-wrapper{
                     display: flex;
                     background-color:  $it-support-color-darker;
                 }
             }
         }
-    
         & > .telecoms-tab{
             &:hover{
                 background-color: $telecoms-color;
@@ -155,13 +153,12 @@
                         background-color: $telecoms-color-darker;
                     }
                 }
-                & > .dd-background{
+                & > .drop-down-wrapper{
                     display: flex;
                     background-color:  $telecoms-color-darker;
                 }
             }
         }
-    
         & > .bespoke-tab{
             &:hover{
                 background-color: $bespoke-color;
@@ -179,7 +176,7 @@
                         background-color: $bespoke-color-darker;
                     }
                 }
-                & > .dd-background{
+                & > .drop-down-wrapper{
                     display: flex;
                     background-color:  $bespoke-color-darker;
                 }
@@ -204,7 +201,7 @@
                         background-color: $marketing-color-darker;
                     }
                 }
-                & > .dd-background{
+                & > .drop-down-wrapper{
                     display: flex;
                     background-color:  $marketing-color-darker;
                 }
@@ -228,7 +225,7 @@
                         background-color: $security-color-darker;
                     }
                 }
-                & > .dd-background{
+                & > .drop-down-wrapper{
                     display: flex;
                     background-color: $security-color-darker;
                 }
@@ -252,11 +249,14 @@
 // ====================================================================================
 // Media Queries for the navigation-bar component
 // ====================================================================================
+
+// Breakpoint for navigation bar set to the width of it rather than the slightly lower number of 992px
+// as that was causing some scaling issues between the 1010px and 992px range that looked bad
 @media only screen and (max-width:1010px){
-    .navigation-bar{
-        display: none;
-    }
+    .navigation-bar{  display: none; }
 }
+
+// Setting the navigation bar to scale-down at mid-size ranges
 @media only screen and (min-width:1010px){
     .navigation-bar{
         & > .tab-wrapper{
@@ -265,17 +265,16 @@
             & > .bar-child{
                 & > .drop-down{
                     & > ul{
-                        & > li{
-                            font-size: 0.805rem;
-                        }
+                        & > li{ font-size: 0.805rem; }
                     }
                 }
             }
         }
-    }
-    
+    } 
 }
 
+
+// The widest setting for the navigation bar
 @media only screen and (min-width:$screen-xl-min){
     .navigation-bar{
         .tab-wrapper{
@@ -284,9 +283,7 @@
             & > .bar-child{
                 & > .drop-down{
                     & > ul{
-                        & > li{
-                            font-size: 1.0rem;
-                        }
+                        & > li{    font-size: 1.0rem; }
                     }
                 }
             }
@@ -296,4 +293,6 @@
     
 }
 
-
+// ====================================================================================
+//  End of Media Queries for the navigation bar component
+// ====================================================================================

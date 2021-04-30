@@ -57,7 +57,7 @@
   line-height: 1;
 }
 
-.navigation-bar > .tab-wrapper > .bar-child > .dd-background {
+.navigation-bar > .tab-wrapper > .bar-child > .drop-down-wrapper {
   display: none;
   padding: 22px 0px;
   z-index: 10;
@@ -67,7 +67,7 @@
 }
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-  .navigation-bar > .tab-wrapper > .bar-child > .dd-background {
+  .navigation-bar > .tab-wrapper > .bar-child > .drop-down-wrapper {
     width: 200vw;
     left: -100%;
   }
@@ -129,7 +129,7 @@
   background-color: #79539a;
 }
 
-.navigation-bar > .tab-wrapper > .web-tab:hover > .dd-background {
+.navigation-bar > .tab-wrapper > .web-tab:hover > .drop-down-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -155,7 +155,7 @@
   background-color: #286abd;
 }
 
-.navigation-bar > .tab-wrapper > .IT-tab:hover > .dd-background {
+.navigation-bar > .tab-wrapper > .IT-tab:hover > .drop-down-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -181,7 +181,7 @@
   background-color: #bc2c28;
 }
 
-.navigation-bar > .tab-wrapper > .telecoms-tab:hover > .dd-background {
+.navigation-bar > .tab-wrapper > .telecoms-tab:hover > .drop-down-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -207,7 +207,7 @@
   background-color: #526781;
 }
 
-.navigation-bar > .tab-wrapper > .bespoke-tab:hover > .dd-background {
+.navigation-bar > .tab-wrapper > .bespoke-tab:hover > .drop-down-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -233,7 +233,7 @@
   background-color: #25a25a;
 }
 
-.navigation-bar > .tab-wrapper > .marketing-tab:hover > .dd-background {
+.navigation-bar > .tab-wrapper > .marketing-tab:hover > .drop-down-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -259,7 +259,7 @@
   background-color: #f62459;
 }
 
-.navigation-bar > .tab-wrapper > .security-tab:hover > .dd-background {
+.navigation-bar > .tab-wrapper > .security-tab:hover > .drop-down-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
