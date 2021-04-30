@@ -50,6 +50,7 @@
                 }   
             }
             & > .drop-down-wrapper{
+                // this class is for widening the colour the appears behind the text in the drop-down of the navbar
                 display: none;
                 padding: 22px 0px;
                 z-index: 10;
@@ -94,18 +95,13 @@
                 background-color: $web-color;
                 & > .icon-tab{
                     & > span{
-                        & > i{
-                            color: $white-text;
-                        }
-                        
+                        & > i{  color: $white-text; }
                     }
                 }
-                & > .dd-web{
+                & > .drop-down-web-design{
                     display:flex;
                     background-color:  $web-color-darker;
-                    & > ul{
-                        background-color:  $web-color-darker;
-                    }
+                    & > ul{ background-color:  $web-color-darker; }
                 }
                 & > .drop-down-wrapper{
                     display: flex;
@@ -118,17 +114,13 @@
                 background-color: $it-support-color;
                 & > .icon-tab{
                     & > span{
-                        & > i{
-                            color: $white-text;
-                        }
+                        & > i{ color: $white-text;  }
                     }
                 }
-                & > .dd-IT{
+                & > .drop-down-it-support{
                     display: flex;
                     background-color: $it-support-color-darker;
-                    & > ul {
-                        background-color: $it-support-color-darker;
-                    }
+                    & > ul {  background-color: $it-support-color-darker; }
                 }
                 & > .drop-down-wrapper{
                     display: flex;
@@ -141,17 +133,13 @@
                 background-color: $telecoms-color;
                 & > .icon-tab{
                     & > span{
-                        & > i{
-                            color: $white-text;
-                        }
+                        & > i{  color: $white-text;  }
                     }
                 }
-                & > .dd-telecoms{
+                & > .drop-down-telecoms{
                     display: flex;
                     background-color: $telecoms-color-darker;
-                    & > ul {
-                        background-color: $telecoms-color-darker;
-                    }
+                    & > ul {  background-color: $telecoms-color-darker; }
                 }
                 & > .drop-down-wrapper{
                     display: flex;
@@ -164,17 +152,13 @@
                 background-color: $bespoke-color;
                 & > .icon-tab{
                     & > span{
-                        & > i{
-                            color: $white-text;
-                        }
+                        & > i{  color: $white-text; }
                     }
                 }
-                & > .dd-bespoke{
+                & > .drop-down-bespoke{
                     display: flex;
                     background-color: $bespoke-color-darker;
-                    & > ul {
-                        background-color: $bespoke-color-darker;
-                    }
+                    & > ul {  background-color: $bespoke-color-darker;  }
                 }
                 & > .drop-down-wrapper{
                     display: flex;
@@ -182,24 +166,19 @@
                 }
             }
         }
-    
+        // Hover effects for marketing tab
         & > .marketing-tab{
             &:hover{
                 background-color: $marketing-color;
                 & > .icon-tab{
                     & > span{
-                        & > i{
-                            color: $white-text;
-                        }
+                        & > i{  color: $white-text; }
                     }
                 }
-    
-                & > .dd-marketing{
+                & > .drop-down-marketing{
                     display: flex;
                     background-color: $marketing-color-darker;
-                    & > ul {
-                        background-color: $marketing-color-darker;
-                    }
+                    & > ul { background-color: $marketing-color-darker;  }
                 }
                 & > .drop-down-wrapper{
                     display: flex;
@@ -213,17 +192,13 @@
                 background-color: $security-color;
                 & > .icon-tab{
                     & > span{
-                        & > i{
-                            color: $white-text;
-                        }
+                        & > i{ color: $white-text;  }
                     }
                 }
                 & > .dd-security{
                     display: flex;
                     background-color: $security-color-darker;
-                    & > ul {
-                        background-color: $security-color-darker;
-                    }
+                    & > ul { background-color: $security-color-darker;   }
                 }
                 & > .drop-down-wrapper{
                     display: flex;
@@ -232,13 +207,8 @@
             }
         }
 
-        & > .tab-s-text{
-            font-size: 0.7rem;
-            
-        }
-        & > .tab-lg-text{
-            font-size: 1.05rem;
-        }
+        & > .tab-s-text{   font-size: 0.7rem;   }
+        & > .tab-lg-text{  font-size: 1.05rem;  }
         
     }
 }

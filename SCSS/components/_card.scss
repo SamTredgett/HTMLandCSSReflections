@@ -53,7 +53,7 @@
                 & > h2::after{ background-color: $white-text; }
             }
             
-            & > .nav-icon-con{
+            & > .card-icon-container{
                 // Setting the minimum sizes and border for the icons
                 min-width: 50px;
                 min-height: 50px;
@@ -121,7 +121,7 @@
 // Changes to card colours and internal element colours on ::hover
 // Bespoke Software Card
 .card-bespoke:hover{
-    .nav-icon-con, #btn-bespoke{
+    .card-icon-container, #btn-bespoke{
         background-color: $white-text;
         color: $bespoke-color;
  }
@@ -134,7 +134,7 @@
 
 // IT Support Card
 .card-IT:hover{
-    .nav-icon-con, #btn-IT{
+    .card-icon-container, #btn-IT{
         background-color: $white-text;
         color: $it-support-color;
  }
@@ -147,7 +147,7 @@
 
 // Marketing Card
 .card-marketing:hover{
-    .nav-icon-con, #btn-marketing{
+    .card-icon-container, #btn-marketing{
         background-color: $white-text;
         color: $marketing-color;
     }
@@ -160,7 +160,7 @@
 
 // Telecoms Card
 .card-telecoms:hover{
-    .nav-icon-con, #btn-telecoms{
+    .card-icon-container, #btn-telecoms{
         background-color: $white-text;
         color: $telecoms-color;
     }
@@ -173,7 +173,7 @@
 
 // Web Design Card
 .card-web:hover{
-    .nav-icon-con, #btn-web{
+    .card-icon-container, #btn-web{
         background-color: $white-text;
         color: $web-color-darker;
     }
@@ -187,7 +187,7 @@
 
 // Security Card
 .card-security:hover{
-    .nav-icon-con, #btn-security{
+    .card-icon-container, #btn-security{
         background-color: $white-text;
         color: $security-color-darker;
     }
@@ -200,7 +200,7 @@
 
 // Developer Training Card
 .card-schools:hover{
-    .nav-icon-con, #btn-school{
+    .card-icon-container, #btn-school{
         background-color: $white-text;
         color: $web-color-darker;
     }
@@ -250,6 +250,7 @@
         display:flex;
         width: $screen-lg-min;
         margin: 25px auto;
+        
         & > .card-nav{
             @media screen and (-ms-high-contrast: active) , (-ms-high-contrast: none) {  width: 33.3%; }  
         }

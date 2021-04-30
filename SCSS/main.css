@@ -118,14 +118,14 @@
   color: #ffffff;
 }
 
-.navigation-bar > .tab-wrapper > .web-tab:hover > .dd-web {
+.navigation-bar > .tab-wrapper > .web-tab:hover > .drop-down-web-design {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   background-color: #79539a;
 }
 
-.navigation-bar > .tab-wrapper > .web-tab:hover > .dd-web > ul {
+.navigation-bar > .tab-wrapper > .web-tab:hover > .drop-down-web-design > ul {
   background-color: #79539a;
 }
 
@@ -144,14 +144,14 @@
   color: #ffffff;
 }
 
-.navigation-bar > .tab-wrapper > .IT-tab:hover > .dd-IT {
+.navigation-bar > .tab-wrapper > .IT-tab:hover > .drop-down-it-support {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   background-color: #286abd;
 }
 
-.navigation-bar > .tab-wrapper > .IT-tab:hover > .dd-IT > ul {
+.navigation-bar > .tab-wrapper > .IT-tab:hover > .drop-down-it-support > ul {
   background-color: #286abd;
 }
 
@@ -170,14 +170,14 @@
   color: #ffffff;
 }
 
-.navigation-bar > .tab-wrapper > .telecoms-tab:hover > .dd-telecoms {
+.navigation-bar > .tab-wrapper > .telecoms-tab:hover > .drop-down-telecoms {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   background-color: #bc2c28;
 }
 
-.navigation-bar > .tab-wrapper > .telecoms-tab:hover > .dd-telecoms > ul {
+.navigation-bar > .tab-wrapper > .telecoms-tab:hover > .drop-down-telecoms > ul {
   background-color: #bc2c28;
 }
 
@@ -196,14 +196,14 @@
   color: #ffffff;
 }
 
-.navigation-bar > .tab-wrapper > .bespoke-tab:hover > .dd-bespoke {
+.navigation-bar > .tab-wrapper > .bespoke-tab:hover > .drop-down-bespoke {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   background-color: #526781;
 }
 
-.navigation-bar > .tab-wrapper > .bespoke-tab:hover > .dd-bespoke > ul {
+.navigation-bar > .tab-wrapper > .bespoke-tab:hover > .drop-down-bespoke > ul {
   background-color: #526781;
 }
 
@@ -222,14 +222,14 @@
   color: #ffffff;
 }
 
-.navigation-bar > .tab-wrapper > .marketing-tab:hover > .dd-marketing {
+.navigation-bar > .tab-wrapper > .marketing-tab:hover > .drop-down-marketing {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   background-color: #25a25a;
 }
 
-.navigation-bar > .tab-wrapper > .marketing-tab:hover > .dd-marketing > ul {
+.navigation-bar > .tab-wrapper > .marketing-tab:hover > .drop-down-marketing > ul {
   background-color: #25a25a;
 }
 
@@ -435,7 +435,7 @@
   background-color: #ffffff;
 }
 
-.nav-cards > .xl-row-nav > .card-nav > .nav-icon-con, .nav-cards .xxl-row-nav .lg-row-nav > .card-nav > .nav-icon-con {
+.nav-cards > .xl-row-nav > .card-nav > .card-icon-container, .nav-cards .xxl-row-nav .lg-row-nav > .card-nav > .card-icon-container {
   min-width: 50px;
   min-height: 50px;
   max-width: 51px;
@@ -446,7 +446,7 @@
   font-weight: 600;
 }
 
-.nav-cards > .xl-row-nav > .card-nav > .nav-icon-con > span > span > i, .nav-cards .xxl-row-nav .lg-row-nav > .card-nav > .nav-icon-con > span > span > i {
+.nav-cards > .xl-row-nav > .card-nav > .card-icon-container > span > span > i, .nav-cards .xxl-row-nav .lg-row-nav > .card-nav > .card-icon-container > span > span > i {
   position: absolute;
   top: 16px;
   left: 16px;
@@ -509,7 +509,7 @@
   cursor: pointer;
 }
 
-.card-bespoke:hover .nav-icon-con, .card-bespoke:hover #btn-bespoke {
+.card-bespoke:hover .card-icon-container, .card-bespoke:hover #btn-bespoke {
   background-color: #ffffff;
   color: #67809f;
 }
@@ -528,7 +528,7 @@
   cursor: pointer;
 }
 
-.card-IT:hover .nav-icon-con, .card-IT:hover #btn-IT {
+.card-IT:hover .card-icon-container, .card-IT:hover #btn-IT {
   background-color: #ffffff;
   color: #4183d7;
 }
@@ -547,7 +547,7 @@
   cursor: pointer;
 }
 
-.card-marketing:hover .nav-icon-con, .card-marketing:hover #btn-marketing {
+.card-marketing:hover .card-icon-container, .card-marketing:hover #btn-marketing {
   background-color: #ffffff;
   color: #2ecc71;
 }
@@ -566,7 +566,7 @@
   cursor: pointer;
 }
 
-.card-telecoms:hover .nav-icon-con, .card-telecoms:hover #btn-telecoms {
+.card-telecoms:hover .card-icon-container, .card-telecoms:hover #btn-telecoms {
   background-color: #ffffff;
   color: #d64541;
 }
@@ -585,7 +585,7 @@
   cursor: pointer;
 }
 
-.card-web:hover .nav-icon-con, .card-web:hover #btn-web {
+.card-web:hover .card-icon-container, .card-web:hover #btn-web {
   background-color: #ffffff;
   color: #79539a;
 }
@@ -604,7 +604,7 @@
   cursor: pointer;
 }
 
-.card-security:hover .nav-icon-con, .card-security:hover #btn-security {
+.card-security:hover .card-icon-container, .card-security:hover #btn-security {
   background-color: #ffffff;
   color: #f62459;
 }
@@ -619,7 +619,7 @@
   cursor: pointer;
 }
 
-.card-schools:hover .nav-icon-con, .card-schools:hover #btn-school {
+.card-schools:hover .card-icon-container, .card-schools:hover #btn-school {
   background-color: #ffffff;
   color: #79539a;
 }
@@ -755,7 +755,6 @@
   background-color: #ffffff;
   border-radius: 3px;
   height: 50px;
-  display: block;
   width: auto;
   padding: 5px 15px;
   border: none;
@@ -763,6 +762,7 @@
   margin-top: 15px;
   margin-bottom: 30px;
   margin-left: 15px;
+  display: block;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -803,7 +803,7 @@
   }
 }
 
-.news-header-con {
+.news-header-container {
   -webkit-box-shadow: inset 0 0px 0px #cccccc;
           box-shadow: inset 0 0px 0px #cccccc;
 }
@@ -991,7 +991,6 @@
 .news-section .news-cards > .card-news > .news-container > .foot-wrapper > .card-foot > .avatar > .minilogo, .news-section .news-cards > .card-news > .news-container > .foot-wrapper > .card-foot .post-info > .minilogo {
   height: auto;
   width: 47px;
-  border-radius: 50%;
 }
 
 .news-section .news-cards > .card-news > .news-container > .foot-wrapper > .card-foot > .post-info {
@@ -1064,6 +1063,26 @@
   padding: 50px 15px;
 }
 
+.companies-north, .companies-beat, .companies-busseys, .companies-crane {
+  position: relative;
+}
+
+.companies-north > img:last-of-type, .companies-beat > img:last-of-type, .companies-busseys > img:last-of-type, .companies-crane > img:last-of-type {
+  display: none;
+}
+
+.companies-north:hover > img:first-of-type, .companies-beat:hover > img:first-of-type, .companies-busseys:hover > img:first-of-type, .companies-crane:hover > img:first-of-type {
+  display: none;
+}
+
+.companies-north:hover > img:last-of-type, .companies-beat:hover > img:last-of-type, .companies-busseys:hover > img:last-of-type, .companies-crane:hover > img:last-of-type {
+  display: block;
+}
+
+.companies-north:hover > .tooltiptext, .companies-beat:hover > .tooltiptext, .companies-busseys:hover > .tooltiptext, .companies-crane:hover > .tooltiptext {
+  visibility: visible;
+}
+
 .companies > .company {
   display: inline-block;
 }
@@ -1072,6 +1091,22 @@
   vertical-align: middle;
   max-width: 100%;
   height: auto;
+}
+
+.companies > .company > .tbeat {
+  left: -45%;
+}
+
+.companies > .company > .tcrane {
+  left: -0%;
+}
+
+.companies > .company > .tbus {
+  left: 10%;
+}
+
+.companies > .company > .tnorth {
+  left: 18%;
 }
 
 .companies > .company > .tooltiptext {
@@ -1118,42 +1153,6 @@
   margin: 0 45%;
 }
 
-.companies > .company > .tbeat {
-  left: -45%;
-}
-
-.companies > .company > .tcrane {
-  left: -0%;
-}
-
-.companies > .company > .tbus {
-  left: 10%;
-}
-
-.companies > .company > .tnorth {
-  left: 18%;
-}
-
-.companies > .con-beat, .companies .con-bus, .companies .con-crane, .companies .con-north {
-  position: relative;
-}
-
-.companies > .con-beat > img:last-of-type, .companies .con-bus > img:last-of-type, .companies .con-crane > img:last-of-type, .companies .con-north > img:last-of-type {
-  display: none;
-}
-
-.companies > .con-beat:hover > img:first-of-type, .companies .con-bus:hover > img:first-of-type, .companies .con-crane:hover > img:first-of-type, .companies .con-north:hover > img:first-of-type {
-  display: none;
-}
-
-.companies > .con-beat:hover > img:last-of-type, .companies .con-bus:hover > img:last-of-type, .companies .con-crane:hover > img:last-of-type, .companies .con-north:hover > img:last-of-type {
-  display: block;
-}
-
-.companies > .con-beat:hover > .tooltiptext, .companies .con-bus:hover > .tooltiptext, .companies .con-crane:hover > .tooltiptext, .companies .con-north:hover > .tooltiptext {
-  visibility: visible;
-}
-
 @media only screen and (max-width: 768px) {
   .companies, .awards-1, .awards-2, .awards {
     display: none;
@@ -1162,15 +1161,15 @@
 
 @media only screen and (max-width: 1280px) {
   .companies > .company > img {
-    -webkit-transform: scale(0.9);
-            transform: scale(0.9);
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
   }
 }
 
 @media only screen and (max-width: 1009px) {
   .companies > .company > img {
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8);
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
   }
 }
 

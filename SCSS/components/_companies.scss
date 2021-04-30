@@ -11,18 +11,38 @@
     margin: 0px 100px;
     padding: 50px 15px;
     // ====================================================================================
+    
+    // Styling for ensuring both images don't appear at once
+    &-north, &-beat, &-busseys, &-crane {
+        position: relative;
+        & > img:last-of-type        {       display: none;      }
+        &:hover{
+            & > img:first-of-type   {       display: none;      }
+            & > img:last-of-type    {       display: block;     }
+            & > .tooltiptext        {       visibility:visible; }
+        }
+    }
+
     & > .company{
         display: inline-block;
+        // ====================================================================================
         & > img{
             vertical-align: middle;
             max-width: 100%;
             height: auto;
+            // ================================================================================
         }
+        // Centering the tool tips above individual logos 
+        & > .tbeat  { left: -45%;   }
+        & > .tcrane { left:  -0%;   }
+        & > .tbus   { left:  10%;   }
+        & > .tnorth { left:  18%;   }
+        // ====================================================================================
+        // Settings for the speech bubble that pops up on hover
         & > .tooltiptext { 
-            // Settings for the speech bubble that pops up on hover
             // Colours
             background-color: $darkest-blue;
-            color: $white-text;
+            color:            $white-text;
 
             // hiding text and setting sizing and placement inside parent object
             visibility: hidden;
@@ -38,7 +58,7 @@
             margin-left: -60px;
             margin-bottom: 70px;
             font-size: 1.0rem;
-            // ====================================================================================
+            // ================================================================================
             & > h3{
                 padding: 10px 10px;
             }
@@ -60,36 +80,14 @@
                 border-width: 40px;
                 border-style: solid;
                 border-color: $darkest-blue transparent transparent transparent;
-                // ====================================================================================
+                // ============================================================================
                 
             }
             & > .spacer-rule{
                 background-color: $white-text;
                 margin: 0 45%;
-            }    
-        }
-        // Centering the tool tips above individual logos 
-        & > .tbeat  { left: -45%;   }
-        & > .tcrane { left:  -0%;   }
-        & > .tbus   { left:  10%;   }
-        & > .tnorth { left:  18%;   }
-    }
-    & >  .con-beat, .con-bus, .con-crane, .con-north {
-        position: relative;
-        & > img:last-of-type{
-            display: none;
-        }
-        &:hover{
-            & > img:first-of-type{
-                display: none;
-            }
-            & > img:last-of-type{
-                display:block;
-            }
-            & > .tooltiptext{
-                visibility:visible;
-            }
-        }
+            } 
+        }      
     }
 }
 // ====================================================================================
@@ -101,19 +99,17 @@
 // ====================================================================================
 // Media Queries for the companies components
 // ====================================================================================
-// hidden at smaller resolutions
+
+// Elements don't appear in mobile view
 @media only screen and (max-width: $screen-md-min){ 
-    .companies, .awards-1, .awards-2, .awards{
-        display:none;
-    }
+    .companies, .awards-1, .awards-2, .awards{ display:none; }
 }
+
 // Reduce the scale a fraction at slightly smaller screen resolutions
 @media only screen and (max-width: $screen-xl-min){
     .companies{
         & > .company{
-            & >img{
-                transform: scale(0.9);
-            }
+            & >img{  transform: scale(0.8);  }
         }
     }
 }
@@ -121,9 +117,7 @@
 @media only screen and (max-width: $screen-lg-min){
     .companies{
         & > .company{
-            & >img{
-                transform: scale(0.8);
-            }
+            & >img{  transform: scale(0.7);  }
         }
     }
 }

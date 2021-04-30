@@ -21,19 +21,25 @@
         font-size: 2.25rem;
     }
     & > .btn-culture{
+        //  Colour settings
         color: $darkest-blue;
         background-color: $white-text;
+
+        // Internal spacings & Radius
         border-radius: 3px;
         height: 50px;
-        display: block;
         width: auto;
         padding: 5px 15px;
         border: none;
         line-height: 35px;
+        // Positioning
         margin-top: 15px;
         margin-bottom: 30px;
         margin-left:15px;
+        display: block;
         justify-content: space-between;
+
+        // ====================================================================================       
         & > a{
             color: $darkest-blue;
             position: relative;
