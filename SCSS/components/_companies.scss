@@ -13,7 +13,7 @@
     // ====================================================================================
 
     // Styling for ensuring both images don't appear at once
-    &-north, &-beat, &-busseys, &-crane {
+    & > .companies-north, .companies-beat, .companies-busseys, .companies-crane {
         position: relative;
         & > img:last-of-type        {       display: none;      }
         &:hover{
@@ -32,11 +32,7 @@
             height: auto;
             // ================================================================================
         }
-        // Centering the tool tips above individual logos 
-        & > .tbeat  { left: -45%;   }
-        & > .tcrane { left:  -0%;   }
-        & > .tbus   { left:  10%;   }
-        & > .tnorth { left:  18%;   }
+
         // ====================================================================================
         // Settings for the speech bubble that pops up on hover
         & > .tooltiptext { 
@@ -89,6 +85,12 @@
                 background-color: $white-text;
                 margin: 0 45%;
             } 
+        
+            // Centering the tool tips above individual logos 
+            & > .tbeat  { left: -5%;     }
+            & > .tcrane { left:  -10%;   }
+            & > .tbus   { left:  10%;    }
+            & > .tnorth { left:  18%;    }
         }      
     }
 }

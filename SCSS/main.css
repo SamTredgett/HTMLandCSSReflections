@@ -1063,23 +1063,23 @@
   padding: 50px 15px;
 }
 
-.companies-north, .companies-beat, .companies-busseys, .companies-crane {
+.companies > .companies-north, .companies .companies-beat, .companies .companies-busseys, .companies .companies-crane {
   position: relative;
 }
 
-.companies-north > img:last-of-type, .companies-beat > img:last-of-type, .companies-busseys > img:last-of-type, .companies-crane > img:last-of-type {
+.companies > .companies-north > img:last-of-type, .companies .companies-beat > img:last-of-type, .companies .companies-busseys > img:last-of-type, .companies .companies-crane > img:last-of-type {
   display: none;
 }
 
-.companies-north:hover > img:first-of-type, .companies-beat:hover > img:first-of-type, .companies-busseys:hover > img:first-of-type, .companies-crane:hover > img:first-of-type {
+.companies > .companies-north:hover > img:first-of-type, .companies .companies-beat:hover > img:first-of-type, .companies .companies-busseys:hover > img:first-of-type, .companies .companies-crane:hover > img:first-of-type {
   display: none;
 }
 
-.companies-north:hover > img:last-of-type, .companies-beat:hover > img:last-of-type, .companies-busseys:hover > img:last-of-type, .companies-crane:hover > img:last-of-type {
+.companies > .companies-north:hover > img:last-of-type, .companies .companies-beat:hover > img:last-of-type, .companies .companies-busseys:hover > img:last-of-type, .companies .companies-crane:hover > img:last-of-type {
   display: block;
 }
 
-.companies-north:hover > .tooltiptext, .companies-beat:hover > .tooltiptext, .companies-busseys:hover > .tooltiptext, .companies-crane:hover > .tooltiptext {
+.companies > .companies-north:hover > .tooltiptext, .companies .companies-beat:hover > .tooltiptext, .companies .companies-busseys:hover > .tooltiptext, .companies .companies-crane:hover > .tooltiptext {
   visibility: visible;
 }
 
@@ -1091,22 +1091,6 @@
   vertical-align: middle;
   max-width: 100%;
   height: auto;
-}
-
-.companies > .company > .tbeat {
-  left: -45%;
-}
-
-.companies > .company > .tcrane {
-  left: -0%;
-}
-
-.companies > .company > .tbus {
-  left: 10%;
-}
-
-.companies > .company > .tnorth {
-  left: 18%;
 }
 
 .companies > .company > .tooltiptext {
@@ -1151,6 +1135,22 @@
 .companies > .company > .tooltiptext > .spacer-rule {
   background-color: #ffffff;
   margin: 0 45%;
+}
+
+.companies > .company > .tooltiptext > .tbeat {
+  left: -5%;
+}
+
+.companies > .company > .tooltiptext > .tcrane {
+  left: -10%;
+}
+
+.companies > .company > .tooltiptext > .tbus {
+  left: 10%;
+}
+
+.companies > .company > .tooltiptext > .tnorth {
+  left: 18%;
 }
 
 @media only screen and (max-width: 768px) {
