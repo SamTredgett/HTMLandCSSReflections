@@ -3,21 +3,29 @@
     padding: 40px 30px;
     margin-bottom: 30px;
     & > .latest{
+        //  Colours
+        color: $darkest-blue;
+        // Internal Properties
         padding-left:0px;
         padding-bottom: 0px;
-        display: inline-block;
         margin-bottom: -10px;
-        color: $darkest-blue;
         font-size: 1.25rem;
+        // Positioning
+        display: inline-block;
         position: relative;
+        // ====================================================================================
         & > .bar-news::after{
+            // Colours
+            background-color: $darkest-blue;
+            // Internal Settings
+            height: 5px;
             content: "";
+            // Positioning
             position: absolute;
             top: 64px;
             left: 0;
             right: 0;
-            background-color: $darkest-blue;
-            height: 5px;
+            // ====================================================================================
         }      
     }
 }
@@ -31,39 +39,50 @@
         & > .card-news{
             margin: 20px 20px;
             & > .minilink{
-                position: absolute;
-                top: 10px;
-                right: 0%;
+                // Colours
                 background-color: $web-color;
                 color: $white-text;
-                text-decoration: none;
-                z-index: 3;
+
+                // Internal Properties
                 padding: 5px 10px;
                 font-weight: 600;
                 font-size: 12px;
-                letter-spacing: .4px;         
+                letter-spacing: .4px;    
+                text-decoration: none;
+                // Position
+                position: absolute;
+                top: 10px;
+                right: 0%;
+                z-index: 3;
+                // ====================================================================================
                 &:hover{
                     text-decoration: underline;
                     cursor: pointer;
                 }
             }         
             & > .news-image{
+                // Internal Properties
                 width: 100%;
                 height: auto;
                 border-radius: 3px;
                 border:none;
                 overflow: hidden;
+                // Positioning
                 position: relative;
+                // ====================================================================================
                 & > .img-overlay{
                     & > .cover{
+                        // Internal Properties
+                        transition: background-color .3s linear;
+                        opacity: 0.3;
+                        // Positioning
                         position: absolute;
                         top: 0;
                         bottom: 0;
                         left: 0;
                         right: 0;
                         z-index: 1;
-                        transition: background-color .3s linear;
-                        opacity: 0.3;
+                        // ====================================================================================
                     }                    
                     & > img{
                         width: 100%;
@@ -100,16 +119,20 @@
                     }
                 }
                 & > .readmore-btn{
+                    // Colours
                     color: $white-text;
                     background-color: $web-color;
+                    // Internal Properties
                     border-radius: 3px;
                     border: none;
                     margin-top: 5px;
                     margin-bottom: 20px;
                     padding: 10px 15px;
+                    // Positioning
                     position: absolute;
                     top: 150px;
-                    left: 30px;           
+                    left: 30px;         
+                    // ====================================================================================  
                     &:hover{
                         background-color: #7e57a0;
                         cursor: pointer;

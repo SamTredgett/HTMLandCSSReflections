@@ -58,12 +58,12 @@
 }
 
 .navigation-bar > .tab-wrapper > .bar-child > .drop-down-wrapper {
-  display: none;
-  padding: 22px 0px;
-  z-index: 10;
-  position: absolute;
   top: 100%;
   width: 200vw;
+  padding: 22px 0px;
+  display: none;
+  z-index: 10;
+  position: absolute;
 }
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
@@ -74,6 +74,8 @@
 }
 
 .navigation-bar > .tab-wrapper > .bar-child > .drop-down {
+  width: 100vw;
+  padding: 8px 0px;
   text-decoration: none;
   display: none;
   -webkit-box-orient: horizontal;
@@ -83,12 +85,13 @@
   position: absolute;
   top: 100%;
   left: 0%;
-  width: 100vw;
-  padding: 8px 0px;
   z-index: 10;
 }
 
 .navigation-bar > .tab-wrapper > .bar-child > .drop-down > ul {
+  list-style: none;
+  text-align: left;
+  margin: 0 auto;
   width: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -97,9 +100,6 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   float: left;
-  list-style: none;
-  text-align: left;
-  margin: 0 auto;
   position: absolute;
   left: -15px;
 }
@@ -377,10 +377,17 @@
 }
 
 .nav-cards > .xl-row-nav > .card-nav, .nav-cards .xxl-row-nav .lg-row-nav > .card-nav {
+  -webkit-box-shadow: inset 0 0px 0px #cccccc;
+          box-shadow: inset 0 0px 0px #cccccc;
+  border: 1px solid #ccc;
+  padding: 30px 30px;
+  text-align: center;
+  margin: 1rem 1rem;
+  border-radius: 3px;
+  height: 300px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 30px 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -388,14 +395,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 300px;
   position: relative;
-  -webkit-box-shadow: inset 0 0px 0px #cccccc;
-          box-shadow: inset 0 0px 0px #cccccc;
-  text-align: center;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-  margin: 1rem 1rem;
 }
 
 .nav-cards > .xl-row-nav > .card-nav > p, .nav-cards .xxl-row-nav .lg-row-nav > .card-nav > p {
@@ -403,28 +403,28 @@
 }
 
 .nav-cards > .xl-row-nav > .card-nav > h2, .nav-cards .xxl-row-nav .lg-row-nav > .card-nav > h2 {
-  position: relative;
+  color: #333645;
   font-size: 1.125rem;
   padding-bottom: 17px;
   margin: 0 0 11px;
   font-weight: 200;
-  color: #333645;
   text-align: center;
   line-height: 1.1;
+  position: relative;
   display: block;
 }
 
 .nav-cards > .xl-row-nav > .card-nav > h2::after, .nav-cards .xxl-row-nav .lg-row-nav > .card-nav > h2::after {
-  position: absolute;
-  content: "";
-  bottom: 0;
-  left: 0;
-  right: 0;
+  background-color: #333645;
   margin: auto;
   width: 28px;
   height: 3px;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
   display: block;
-  background-color: #333645;
 }
 
 .nav-cards > .xl-row-nav > .card-nav:hover > p, .nav-cards > .xl-row-nav > .card-nav:hover h2, .nav-cards .xxl-row-nav .lg-row-nav > .card-nav:hover > p, .nav-cards .xxl-row-nav .lg-row-nav > .card-nav:hover h2 {
@@ -814,23 +814,23 @@
 }
 
 .news-header-section > .latest {
+  color: #333645;
   padding-left: 0px;
   padding-bottom: 0px;
-  display: inline-block;
   margin-bottom: -10px;
-  color: #333645;
   font-size: 1.25rem;
+  display: inline-block;
   position: relative;
 }
 
 .news-header-section > .latest > .bar-news::after {
+  background-color: #333645;
+  height: 5px;
   content: "";
   position: absolute;
   top: 64px;
   left: 0;
   right: 0;
-  background-color: #333645;
-  height: 5px;
 }
 
 .news-section {
@@ -848,17 +848,17 @@
 }
 
 .news-section .news-cards > .card-news > .minilink {
-  position: absolute;
-  top: 10px;
-  right: 0%;
   background-color: #926fb1;
   color: #ffffff;
-  text-decoration: none;
-  z-index: 3;
   padding: 5px 10px;
   font-weight: 600;
   font-size: 12px;
   letter-spacing: .4px;
+  text-decoration: none;
+  position: absolute;
+  top: 10px;
+  right: 0%;
+  z-index: 3;
 }
 
 .news-section .news-cards > .card-news > .minilink:hover {
@@ -876,15 +876,15 @@
 }
 
 .news-section .news-cards > .card-news > .news-image > .img-overlay > .cover {
+  -webkit-transition: background-color .3s linear;
+  transition: background-color .3s linear;
+  opacity: 0.3;
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   z-index: 1;
-  -webkit-transition: background-color .3s linear;
-  transition: background-color .3s linear;
-  opacity: 0.3;
 }
 
 .news-section .news-cards > .card-news > .news-image > .img-overlay > img {

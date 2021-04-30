@@ -36,12 +36,15 @@
             &:hover { cursor: pointer; }
             & > .tab-s-text{ font-size: .7rem; }   
             & > .icon-tab{
+                // Internal Properties
                 padding-bottom: 10px;
                 text-align: center;
                 vertical-align: middle;
                 font-size: 1.3rem;
                 line-height: 1px;
+                // Positioning
                 position:relative;
+                // ====================================================================================
                 & > span{
                     & > i{
                         font-size: 1.438rem;
@@ -50,38 +53,46 @@
                 }   
             }
             & > .drop-down-wrapper{
-                // this class is for widening the colour the appears behind the text in the drop-down of the navbar
-                display: none;
-                padding: 22px 0px;
-                z-index: 10;
-                position:absolute;
+                // Internal Properties
                 top: 100%;
                 width: 200vw;
+                padding: 22px 0px;                
+                // Positioning
+                display: none;
+                z-index: 10;
+                position:absolute;
+                // ====================================================================================
                 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
                     width: 200vw;
                     left: -100%;
                 }
             }
             & > .drop-down{
-                text-decoration:none;
+                // Internal Properties
+                width: 100vw;
+                padding: 8px 0px;
+                text-decoration:none;                
+                // Positioning
                 display:none;
                 flex-direction: row;
                 position:absolute;
                 top: 100%;
                 left: 0%;
-                width: 100vw;
-                padding: 8px 0px;
                 z-index: 10;
+                // ====================================================================================
                 & > ul{
-                    width: auto;
-                    display:flex;
-                    justify-content: space-between;
-                    float: left;
+                    // Internal Properties
                     list-style: none;
                     text-align: left;
                     margin: 0 auto;
+                    width: auto;
+                    // Positioning
+                    display:flex;
+                    justify-content: space-between;
+                    float: left;
                     position: absolute;
                     left: -15px;
+                    // ====================================================================================
                     & >li{
                         display:block;
                         float:left;
