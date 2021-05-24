@@ -740,7 +740,8 @@
 
 .culture-back {
   background-repeat: no-repeat;
-  background-size: cover;
+  background-position: 100%;
+  background-size: auto 100%;
   padding: 15px 15px;
   text-align: left;
 }
@@ -801,7 +802,8 @@
     background-color: #333645;
     background-image: url("../img/netmatters-transp.png");
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: 100%;
+    background-size: auto 100%;
   }
   .culture-back {
     width: 1298px;
