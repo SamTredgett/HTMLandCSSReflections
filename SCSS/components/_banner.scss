@@ -26,8 +26,9 @@
                  letter-spacing: .4px;
                  font-weight: 400;
              }
-             & > p{
+             & > p{ // Setting text to match site and margin to prevent excess space between lines
                  font-size: 20px;
+                 margin-bottom:.5rem;
              }
 
              // Some text alignment settings, centers and prevents it from moving around madly

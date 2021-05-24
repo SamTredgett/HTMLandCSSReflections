@@ -336,6 +336,7 @@
 
 .banner > .banner-overlay > .banner-text > p {
   font-size: 20px;
+  margin-bottom: .5rem;
 }
 
 .banner > .banner-overlay > .banner-text > a {
