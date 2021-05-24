@@ -1124,6 +1124,7 @@
 
 .companies > .company > .tooltiptext > h3 {
   padding: 10px 10px;
+  font-size: 1.125rem;
 }
 
 .companies > .company > .tooltiptext > hr {
