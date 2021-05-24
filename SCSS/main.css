@@ -1407,6 +1407,7 @@ body {
 .logo {
   display: block;
   max-width: 100%;
+  margin-left: -40px;
 }
 
 .header {
@@ -1526,7 +1527,7 @@ body {
   height: 56px;
   display: block;
   top: 15px;
-  right: 0px;
+  right: 30px;
 }
 
 .header > .header-inner .buttons > .hamburger > .menutext {
@@ -1638,7 +1639,7 @@ body {
   .searchbar-lg {
     position: absolute;
     top: 15px;
-    right: 140px;
+    right: 155px;
   }
   .searchbar-lg > form {
     position: relative;

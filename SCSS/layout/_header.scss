@@ -4,6 +4,7 @@
 .logo{
     display:block;
     max-width: 100%;
+    margin-left: -40px;
     // margin-top: 15px;
 }
 .header{
@@ -94,7 +95,7 @@
                 // Positioning
                 display: block;
                 top: 15px;
-                right: 0px;
+                right: 30px;
                 // ====================================================================================
                 & > .menutext{
                     font-size: 0.75rem;
@@ -209,7 +210,7 @@
     .searchbar-lg{
         position:absolute;
         top:15px;
-        right: 140px;
+        right: 155px;
 
         & > form{
             position:relative;
