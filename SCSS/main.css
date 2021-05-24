@@ -783,10 +783,8 @@
   position: relative;
 }
 
-.culture-back > .btn-culture > a > img {
-  position: absolute;
-  top: 0px;
-  left: 110%;
+.culture-back > .btn-culture > i {
+  margin-left: 12px;
 }
 
 .culture-back > .btn-culture:hover {

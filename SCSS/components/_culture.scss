@@ -45,12 +45,16 @@
         & > a{
             color: $darkest-blue;
             position: relative;
-            & > img{
-                position: absolute;
-                top: 0px;
-                left: 110%;
-            }
+            // & > img{
+            //     position: absolute;
+            //     top: 0px;
+            //     left: 110%;
+            // }
         }
+        & > i{ // Spacing the arrow further to the right of the text.
+            margin-left:12px;
+        }
+
         &:hover{
             background-color:#ebebeb;
         }
