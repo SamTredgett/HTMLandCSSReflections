@@ -22,16 +22,19 @@
          & > .banner-text{   // Adjusting text inside the banner 
              & > h1{  
                  // Make the heading text larger and bolder
-                 font-size: 3rem;  
+                 font-size: 3.5rem;  
                  letter-spacing: .4px;
                  font-weight: 400;
+             }
+             & > p{
+                 font-size: 20px;
              }
 
              // Some text alignment settings, centers and prevents it from moving around madly
              margin: 0 auto;
              text-align: center;
              display: block;
-             padding: 20% 0%;
+             padding: 15% 0%;
              justify-content: center;
              color:$white-text;
              & > a{ color:$white-text; } // Anchor tags set to white
@@ -48,7 +51,7 @@
                 padding: 5px 20px;                 
                 height: auto;                      
                 font-size:1.25rem;                 
-                line-height: 50px;                                         
+                line-height: 45px;                                         
                 margin: 30px 0;   
                 // ====================================================================================
                       

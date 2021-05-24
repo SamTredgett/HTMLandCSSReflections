@@ -241,7 +241,7 @@
 }
 
 .navigation-bar > .tab-wrapper > .security-tab:hover {
-  background-color: #de093f;
+  background-color: #f62459;
 }
 
 .navigation-bar > .tab-wrapper > .security-tab:hover > .icon-tab > span > i {
@@ -252,18 +252,18 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #f62459;
+  background-color: #de093f;
 }
 
 .navigation-bar > .tab-wrapper > .security-tab:hover > .dd-security > ul {
-  background-color: #f62459;
+  background-color: #de093f;
 }
 
 .navigation-bar > .tab-wrapper > .security-tab:hover > .drop-down-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #f62459;
+  background-color: #de093f;
 }
 
 .navigation-bar > .tab-wrapper > .tab-s-text {
@@ -321,7 +321,7 @@
   margin: 0 auto;
   text-align: center;
   display: block;
-  padding: 20% 0%;
+  padding: 15% 0%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -329,9 +329,13 @@
 }
 
 .banner > .banner-overlay > .banner-text > h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
   letter-spacing: .4px;
   font-weight: 400;
+}
+
+.banner > .banner-overlay > .banner-text > p {
+  font-size: 20px;
 }
 
 .banner > .banner-overlay > .banner-text > a {
@@ -339,19 +343,19 @@
 }
 
 .banner > .banner-overlay > .banner-text > .btn-banner {
-  background-color: #de093f;
+  background-color: #f62459;
   color: #ffffff;
   border-radius: 3px;
   border: none;
   padding: 5px 20px;
   height: auto;
   font-size: 1.25rem;
-  line-height: 50px;
+  line-height: 45px;
   margin: 30px 0;
 }
 
 .banner > .banner-overlay > .banner-text > .btn-banner:hover {
-  background-color: #f62459;
+  background-color: #de093f;
   cursor: pointer;
 }
 
@@ -496,7 +500,7 @@
 }
 
 .security, #btn-security {
-  background-color: #f62459;
+  background-color: #de093f;
 }
 
 .schools, #btn-school {
@@ -599,18 +603,18 @@
 }
 
 .card-security:hover {
-  background-color: #f62459;
+  background-color: #de093f;
   color: #ffffff;
   cursor: pointer;
 }
 
 .card-security:hover .card-icon-container, .card-security:hover #btn-security {
   background-color: #ffffff;
-  color: #f62459;
+  color: #de093f;
 }
 
 .card-security:hover i {
-  color: #f62459;
+  color: #de093f;
 }
 
 .card-schools:hover {
