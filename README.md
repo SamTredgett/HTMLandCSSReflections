@@ -4,3 +4,5 @@ This is meant to demonstrate my ability to use SCSS and CSS to style and structu
 
 
 This project has undergone several revisions and will need more in the future to fix several smaller bugs i've noticed appearing during the later stages. 
+
+Now beginning implementations of JavaScript features. 
