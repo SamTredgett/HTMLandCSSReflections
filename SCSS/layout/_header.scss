@@ -8,26 +8,57 @@
     // margin-top: 15px;
 }
 .header{
-    padding-top: 5px;
-    padding-bottom: 5px;
-    margin: 0 15px;
+    // height: 100px;
+    // margin: 0 15px;
+    background: white;
+    // position:fixed;
+    z-index: 999999;
+    width:100%;
+    transition: all 200ms ease-in-out;
+
+    &-nav-wrapper {
+        height:100%;
+        position: fixed;
+    }
+
+    @media only screen and (max-width: 768px) {
+        & > .header-inner {
+            justify-content: space-around;
+        }
+        
+    }
     & > .header-inner{
         // Internal Properties
-        height:35px;
-        padding:20px;   
-        margin: 30px auto;        
-        
+        // height:35px;
+        // padding:20px;   
+        // margin: 30px auto;        
+        padding-top: 30px;
+        padding-left: 50px;
         // Positioning
         display: flex;
         vertical-align: middle;
         flex-direction: row;
         position: relative;
+        justify-content: space-between;
+
+
         // ====================================================================================
         .buttons{
             display:flex;
+            position:relative;
             justify-content: space-around;
             margin-left:20px;
+            padding: 10px;
             // ====================================================================================
+            & > .mobile {
+                margin-right: 100px;
+                margin-top: 18px;
+                & > .mobile-icon {
+                    font-size: 30px;
+                }
+                
+            }
+            
             & > .pull-left {
                 float:left;
                 float:left!important;

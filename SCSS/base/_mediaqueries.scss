@@ -34,7 +34,7 @@
 // ====================================================================================
 // Adjustments for viewing on medium sized screens/tablets
 @media only screen and (min-width: $screen-md-min){
-    .header-inner, .searchbar-mobile, .banner-text,
+     .searchbar-mobile, .banner-text,
     .nav-cards, .culture-back, .news-header-section,
     .news-cards, .companies, .sign-up-form, .footer-content {
         width: $screen-md-min;
@@ -59,6 +59,13 @@
     .news-cards, .footer-content, .sign-up-form, .awards-1, .awards-2 {
         width: 1298px;
         margin: 0 auto;
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+    .mobile {
+        display: none;
     }
 }
 // ====================================================================================

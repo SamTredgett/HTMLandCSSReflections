@@ -15,6 +15,9 @@ footer {
             // internal properties
             padding: 30px 30px;
             margin: 0 auto;
+            ul {
+                padding-left: 0;
+            }
             // tweaks to divs for inside of the footer
             & > div {
                 color: white;

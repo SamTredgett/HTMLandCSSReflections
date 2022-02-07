@@ -6,6 +6,7 @@
     border-bottom: #ebebeb 1px solid;
     background-color: $darkest-blue;
     position: relative;   
+    z-index: 100;
     & > .tab-wrapper{ 
         // Set the button wraps to flexbox
         display:flex;
